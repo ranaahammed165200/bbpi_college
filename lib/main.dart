@@ -1,5 +1,6 @@
 import 'package:bbpi_college/modiuls/department_details.dart';
 import 'package:bbpi_college/screen/department.dart';
+import 'package:bbpi_college/screen/teacherlist.dart';
 import 'package:flutter/material.dart';
 
 import 'screen/department_details_view.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/Homepage': (context) => HomePage(),
         '/depat': (context) => DepartMent(),
         '/depatment': (context) => DepartmentDetails(),
+
       },
     );
   }
