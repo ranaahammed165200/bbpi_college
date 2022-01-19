@@ -1,8 +1,7 @@
-import 'package:bbpi_college/screen/department_details_view.dart';
-
-class AppConstant {
-  static const homePage = '/Homepage';
-
-  static const department = '/depat';
-  static const DepartmentDetails = '/depatmentDetails';
+class Appconstant {
+  static final homepage = '/Homepage';
+  static final department = '/depat';
+  static final departmentdetails = '/depatmentdetails';
+  static const doctorPage = '/doctor';
+  static const teacherviewPage = '/teacherview';
 }

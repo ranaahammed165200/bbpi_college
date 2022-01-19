@@ -1,20 +1,18 @@
+
+import 'package:bbpi_college/config/app_constant.dart';
+import 'package:bbpi_college/screen/department.dart';
 import 'package:bbpi_college/screen/department_details_view.dart';
+
 import 'package:bbpi_college/screen/homepage.dart';
+import 'package:bbpi_college/screen/teacherveiw.dart';
+import 'package:flutter/cupertino.dart';
 
-
-
-class AppRoutes {
-  static final myInitRoute = AppConstant.homePage;
-  static final routes = {
-    AppConstant.homePage: (context) => const HomePage(),
-    AppConstant.department: (context) => const DepartmentDetails(),
-    
-   
+class Approutes {
+  static final myInRoute = Appconstant.homepage;
+  static final Map<String, WidgetBuilder> routes = {
+    Appconstant.homepage: (context) => const HomePage(),
+    Appconstant.department: (context) => DepartMent(),
+    Appconstant.departmentdetails: (context) => DepartmentDetails(),
+    Appconstant.teacherviewPage: (context) => TeacherView(),
   };
-}
-
-class AppConstant {
-  static var homePage;
-
-  static var department;
 }

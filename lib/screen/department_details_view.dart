@@ -13,6 +13,7 @@ class DepartmentDetails extends StatelessWidget {
         child: Column(
           children: [
             Text('${arg.name!}'),
+          
             Text('${arg.details!.title}'),
             Text('${arg.details!.dec}'),
           ],

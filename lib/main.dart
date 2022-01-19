@@ -1,10 +1,6 @@
-import 'package:bbpi_college/modiuls/department_details.dart';
-import 'package:bbpi_college/screen/department.dart';
-import 'package:bbpi_college/screen/teacherlist.dart';
+import 'package:bbpi_college/config/routis.dart';
 import 'package:flutter/material.dart';
 
-import 'screen/department_details_view.dart';
-import 'screen/homepage.dart';
 
 Future<void> main() async {
   runApp(const MyApp());
@@ -22,13 +18,8 @@ class MyApp extends StatelessWidget {
       ),
 
       // home:SigninPage() ,
-      initialRoute: '/Homepage',
-      routes: {
-        '/Homepage': (context) => HomePage(),
-        '/depat': (context) => DepartMent(),
-        '/depatment': (context) => DepartmentDetails(),
-
-      },
+      initialRoute: Approutes.myInRoute,
+      routes: Approutes.routes,
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:bbpi_college/config/app_constant.dart';
 import 'package:bbpi_college/screen/drwer.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +32,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.green.shade400,
                     iconData: Icons.near_me,
                     onTab: () {
-                      Navigator.pushNamed(context, '/depat');
+                      Navigator.pushNamed(context, Appconstant.department);
                     },
                   ),
                 ),
@@ -42,7 +43,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.yellow,
                     iconData: Icons.home_max,
                     onTab: () {
-                      Navigator.pushNamed(context, '/depat');
+                      Navigator.pushNamed(context, Appconstant.teacherviewPage);
                     },
                   ),
                 ),

@@ -1,0 +1,24 @@
+
+[
+    {
+        "id":1,
+        "name":"Md. Abul Kalam Azad",
+        "des":"Principal (in Charge)Brahmanbaria Polytechnic InstituteIslampur, Bijoynagar, Brahmanbaria",
+        "Position":"Principal",
+        "edu":"M.Sc in Food Technology B.Sc in Agricultural Engineering-Bangladesh Agricultural University",
+        "img":"https://www.bbpi.gov.bd/images/teacherstaff/Abul-Kalam-Azad.jpg",
+        "email":"bbariapoly@yahoo.com",
+        "mobile number":"01926-022837"
+    },
+    {
+        "id":2,
+        "name":"Mohammad Selim",
+        "Department":"CMT",
+        "Position":"Instructor (Tech) & Head of the Department of Computer Technology",
+        "dept":"B.Sc in CSE (DUET)",
+        "edu":"MBBS, DPH, M Phil",
+        "img":"https://www.bbpi.gov.bd/images/teacherstaff/Mohammed-Selim.jpg",
+        "mobile number":"01818-237705 "
+       
+    }
+]
