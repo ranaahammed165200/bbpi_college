@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
                   child: _customButton(
                     context: context,
                     name: 'Department',
-                    color: Colors.green.shade400,
+                    color: Colors.lightGreen,
                     iconData: Icons.near_me,
                     onTab: () {
                       Navigator.pushNamed(context, Appconstant.department);
@@ -40,8 +40,8 @@ class HomePage extends StatelessWidget {
                   child: _customButton(
                     context: context,
                     name: 'Teacher List',
-                    color: Colors.yellow,
-                    iconData: Icons.home_max,
+                    color: Colors.lightGreen,
+                    iconData: Icons.account_box,
                     onTab: () {
                       Navigator.pushNamed(context, Appconstant.teacherviewPage);
                     },
@@ -56,8 +56,8 @@ class HomePage extends StatelessWidget {
                 Expanded(
                   child: _customButton(
                     context: context,
-                    name: 'Department',
-                    color: Colors.amber.shade400,
+                    name: 'Latest Notice',
+                    color: Colors.lightGreen,
                     iconData: Icons.departure_board,
                     onTab: () {},
                   ),
@@ -66,7 +66,7 @@ class HomePage extends StatelessWidget {
                   child: _customButton(
                     context: context,
                     name: 'Department',
-                    color: Colors.blueGrey.shade400,
+                    color: Colors.lightGreen,
                     iconData: Icons.account_balance_wallet,
                     onTab: () {},
                   ),
@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
                   child: _customButton(
                     context: context,
                     name: 'Department',
-                    color: Colors.amber.shade400,
+                    color: Colors.lightGreen,
                     iconData: Icons.departure_board,
                     onTab: () {},
                   ),
@@ -90,7 +90,7 @@ class HomePage extends StatelessWidget {
                   child: _customButton(
                     context: context,
                     name: 'Department',
-                    color: Colors.blueGrey.shade400,
+                    color: Colors.lightGreen,
                     iconData: Icons.account_balance_wallet,
                     onTab: () {},
                   ),
@@ -120,6 +120,7 @@ class HomePage extends StatelessWidget {
         height: 120.0,
         decoration: BoxDecoration(
             color: color, borderRadius: BorderRadius.circular(15.0)),
+
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,

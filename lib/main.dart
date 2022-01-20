@@ -1,7 +1,6 @@
 import 'package:bbpi_college/config/routis.dart';
 import 'package:flutter/material.dart';
 
-
 Future<void> main() async {
   runApp(const MyApp());
 }
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
+        primarySwatch: Colors.lightGreen,
       ),
 
       // home:SigninPage() ,
