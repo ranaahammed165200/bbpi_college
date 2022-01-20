@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:bbpi_college/config/app_constant.dart';
 import 'package:bbpi_college/screen/drwer.dart';
 import 'package:flutter/material.dart';
@@ -8,99 +10,113 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: DrawerMy(),
-      backgroundColor: Colors.grey.shade400,
-      appBar: AppBar(
-        title: Text('HomePage'),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            SizedBox(
-              height: 10.0,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Expanded(
-                  child: _customButton(
-                    context: context,
-                    name: 'Department',
-                    color: Colors.lightGreen,
-                    iconData: Icons.near_me,
-                    onTab: () {
-                      Navigator.pushNamed(context, Appconstant.department);
-                    },
-                  ),
-                ),
-                Expanded(
-                  child: _customButton(
-                    context: context,
-                    name: 'Teacher List',
-                    color: Colors.lightGreen,
-                    iconData: Icons.account_box,
-                    onTab: () {
-                      Navigator.pushNamed(context, Appconstant.teacherviewPage);
-                    },
-                  ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Expanded(
-                  child: _customButton(
-                    context: context,
-                    name: 'Latest Notice',
-                    color: Colors.lightGreen,
-                    iconData: Icons.departure_board,
-                    onTab: () {},
-                  ),
-                ),
-                Expanded(
-                  child: _customButton(
-                    context: context,
-                    name: 'Department',
-                    color: Colors.lightGreen,
-                    iconData: Icons.account_balance_wallet,
-                    onTab: () {},
-                  ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Expanded(
-                  child: _customButton(
-                    context: context,
-                    name: 'Department',
-                    color: Colors.lightGreen,
-                    iconData: Icons.departure_board,
-                    onTab: () {},
-                  ),
-                ),
-                Expanded(
-                  child: _customButton(
-                    context: context,
-                    name: 'Department',
-                    color: Colors.lightGreen,
-                    iconData: Icons.account_balance_wallet,
-                    onTab: () {},
-                  ),
-                ),
-              ],
-            ),
-          ],
+        drawer: DrawerMy(),
+        backgroundColor: Colors.grey.shade400,
+        appBar: AppBar(
+          title: Text('HomePage'),
         ),
-      ),
-    );
+        body: SizedBox(
+          height: MediaQuery.of(context).size.height,
+          width: double.maxFinite,
+          child: Stack(fit: StackFit.expand, children: [
+            ImageFiltered(
+              imageFilter: ImageFilter.blur(sigmaX: 5, sigmaY: 4),
+              child: Image.asset(
+                "asset/niloy.jpg",
+                fit: BoxFit.cover,
+              ),
+            ),
+            SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'Department',
+                          color: Colors.lightGreen,
+                          iconData: Icons.near_me,
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.department);
+                          },
+                        ),
+                      ),
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'Teacher List',
+                          color: Colors.lightGreen,
+                          iconData: Icons.account_box,
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.teacherviewPage);
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'Latest Notice',
+                          color: Colors.lightGreen,
+                          iconData: Icons.departure_board,
+                          onTab: () {},
+                        ),
+                      ),
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'Department',
+                          color: Colors.lightGreen,
+                          iconData: Icons.account_balance_wallet,
+                          onTab: () {},
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'Department',
+                          color: Colors.lightGreen,
+                          iconData: Icons.departure_board,
+                          onTab: () {},
+                        ),
+                      ),
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'Department',
+                          color: Colors.lightGreen,
+                          iconData: Icons.account_balance_wallet,
+                          onTab: () {},
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ]),
+        ));
   }
 
   Widget _customButton({
