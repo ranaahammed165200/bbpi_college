@@ -1,4 +1,5 @@
-import 'package:bbpi_college/modiuls/department_modiuls.dart';
+
+import 'package:bbpi_college/models/department_modiuls.dart';
 import 'package:flutter/material.dart';
 
 class DepartmentDetails extends StatelessWidget {

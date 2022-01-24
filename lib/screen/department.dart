@@ -1,5 +1,6 @@
-import 'package:bbpi_college/modiuls/department_details.dart';
-import 'package:bbpi_college/modiuls/department_modiuls.dart';
+
+import 'package:bbpi_college/models/department_details.dart';
+import 'package:bbpi_college/models/department_modiuls.dart';
 import 'package:flutter/material.dart';
 
 class DepartMent extends StatelessWidget {
@@ -23,6 +24,7 @@ class DepartMent extends StatelessWidget {
         img: '',
         details: DepartmentDetailsModel(
             id: 2, name: 'emt', title: 'Emt', img: '', dec: 'Cmt class'),
+            
       ),
       Department(id: 3, name: 'RAC', img: ''),
       Department(id: 1, name: 'AIDT', img: ''),
@@ -36,7 +38,7 @@ class DepartMent extends StatelessWidget {
           itemBuilder: (context, index) {
             return Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 8.0, vertical: 5.0),
+                    const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
                 child: ElevatedButton(
                   onPressed: () {
                     if (depList.elementAt(index).id == 1) {
@@ -48,10 +50,11 @@ class DepartMent extends StatelessWidget {
                       Navigator.pushNamed(context, '/department',
                           arguments: engDept);
                     }
+                 
                   },
                   child: Text('${depList.elementAt(index).name}'),
                   style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.symmetric(vertical: 5.0)),
+                      padding: EdgeInsets.symmetric(vertical: 50.0)),
                 ));
           }),
     );

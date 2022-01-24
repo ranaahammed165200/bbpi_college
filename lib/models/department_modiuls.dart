@@ -1,4 +1,6 @@
-import 'package:bbpi_college/modiuls/department_details.dart';
+
+
+import 'package:bbpi_college/models/department_details.dart';
 
 class Department {
   int? id;
