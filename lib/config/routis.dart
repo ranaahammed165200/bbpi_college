@@ -1,7 +1,9 @@
+import 'dart:js';
 
 import 'package:bbpi_college/config/app_constant.dart';
 import 'package:bbpi_college/screen/department.dart';
 import 'package:bbpi_college/screen/department_details_view.dart';
+import 'package:bbpi_college/screen/department_teacherlistview.dart';
 
 import 'package:bbpi_college/screen/homepage.dart';
 import 'package:bbpi_college/screen/teacherveiw.dart';
@@ -14,5 +16,6 @@ class Approutes {
     Appconstant.department: (context) => DepartMent(),
     Appconstant.departmentdetails: (context) => DepartmentDetails(),
     Appconstant.teacherviewPage: (context) => TeacherView(),
+    Appconstant.deptechlist: (context) => DepartmentTeacherView(),
   };
 }

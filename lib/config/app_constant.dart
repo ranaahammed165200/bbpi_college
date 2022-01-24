@@ -4,4 +4,5 @@ class Appconstant {
   static final departmentdetails = '/depatmentdetails';
   static const doctorPage = '/doctor';
   static const teacherviewPage = '/teacherview';
+  static const deptechlist = '/teacherlist';
 }
