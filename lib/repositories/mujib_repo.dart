@@ -1,6 +1,7 @@
 import 'dart:convert';
 
-import 'package:bbpi_college/modiuls/mujib_model.dart';
+
+import 'package:bbpi_college/models/mujib_model.dart';
 import 'package:flutter/services.dart';
 
 class MujibRepo {

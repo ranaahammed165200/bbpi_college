@@ -1,4 +1,5 @@
-import 'package:bbpi_college/modiuls/department_teacherlist_model.dart';
+
+import 'package:bbpi_college/models/department_teacherlist_model.dart';
 import 'package:bbpi_college/repositories/department_teacherlist.dart';
 import 'package:flutter/material.dart';
 

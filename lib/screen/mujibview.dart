@@ -1,6 +1,6 @@
 import 'dart:html';
 
-import 'package:bbpi_college/modiuls/mujib_model.dart';
+import 'package:bbpi_college/models/mujib_model.dart';
 import 'package:flutter/material.dart';
 
 import '../repositories/mujib_repo.dart';

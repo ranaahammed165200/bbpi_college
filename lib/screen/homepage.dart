@@ -77,18 +77,20 @@ class HomePage extends StatelessWidget {
                           color: Colors.lightGreen,
                           image: "asset/image/about.png",
                           onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.deptechlist);
+                            
                           },
                         ),
                       ),
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'DOENLOAD',
+                          name: 'DEPARTMENT',
                           color: Colors.lightGreen,
-                          iconData: Icons.download,
-                          onTab: () {},
+                          image: 'asset/image/department.png',
+                          onTab: () {
+                             Navigator.pushNamed(
+                                context, Appconstant.department);
+                          },
                         ),
                       ),
                     ],
@@ -100,12 +102,11 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'DEPARTMENT',
+                          name: 'DOWNLOAD',
                           color: Colors.lightGreen,
-                          iconData: Icons.departure_board,
+                          image: 'asset/image/downloadp.png',
                           onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.department);
+                           
                           },
                         ),
                       ),
@@ -114,7 +115,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'DEPARTMENT TEACHER LIST',
                           color: Colors.lightGreen,
-                          iconData: Icons.account_balance_wallet,
+                          image: 'asset/image/teamwork.png',
                           onTab: () {},
                         ),
                       ),

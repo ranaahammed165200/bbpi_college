@@ -65,9 +65,13 @@ flutter:
     - asset/json/depatteacherlist.json
     - asset/image/mujib.jpg
     - asset/image/about.png
-    - asset/image/administrator.png
     - asset/json/mujib.json
     - asset/image/mujibpic.jpg
+    - asset/image/downloadp.png
+    - asset/image/department.png
+    - asset/image/teamwork.png
+    - asset/image/administrator.png
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,6 +1,7 @@
 import 'dart:convert';
 
-import 'package:bbpi_college/modiuls/department_teacherlist_model.dart';
+import 'package:bbpi_college/models/department_teacherlist_model.dart';
+
 import 'package:flutter/services.dart';
 
 class DepartmentTeachRepo {
