@@ -7,8 +7,13 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  get image => null;
+
+  get asset => null;
+
   @override
   Widget build(BuildContext context) {
+    var administrator;
     return Scaffold(
         drawer: DrawerMy(),
         backgroundColor: Colors.grey.shade400,
@@ -40,17 +45,13 @@ class HomePage extends StatelessWidget {
                     children: [
                       Expanded(
                         child: _customButton(
-                          
                           context: context,
-                            
                           name: 'MUJIB CORNER',
-                          color: Colors.blue.shade400,
+                          color: Colors.lightGreen,
                           image: "asset/image/mujib.jpg",
-                          
-                        
-                      
                           onTab: () {
-                           
+                            Navigator.pushNamed(
+                                context, Appconstant.mujib_view);
                           },
                         ),
                       ),
@@ -58,94 +59,14 @@ class HomePage extends StatelessWidget {
                         child: _customButton(
                           context: context,
                           name: 'ADMINISTRATION',
-                          color: Colors.blue.shade400,
-                          image: "asset/image/teachers.png",
-                        
-                          onTab: () {
-                            
-                          },
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'Latest Notice',
-                          
-                          color: Colors.blue.shade400,
-                          iconData: Icons.departure_board,
-                          onTab: () {},
-                        ),
-                      ),
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'DEPARTMENT',
-                          color: Colors.blue.shade400,
-                          iconData: Icons.account_balance_wallet,
-                          onTab: () {
-                             Navigator.pushNamed(
-                                context, Appconstant.department);
-                          },
-                        ),
-                      ),
-                    ],
-                  ),
-                  
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'TECHNOLOGY',
-                          color: Colors.blue.shade400,
-                          iconData: Icons.departure_board,
-                          onTab: () {},
-                        ),
-                      ),
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'DEPARTMENT TEACHER LIST',
-                          color: Colors.blue.shade400,
-                          iconData: Icons.account_balance_wallet,
+                          color: Colors.lightGreen,
+                          image: 'asset/image/administrator.png',
                           onTab: () {},
                         ),
                       ),
                     ],
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'RESULT',
-                          color: Colors.blue.shade400,
-                          iconData: Icons.departure_board,
-                          onTab: () {},
-                        ),
-                      ),
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'STUDENT UNFO',
-                          color: Colors.blue.shade400,
-                          iconData: Icons.account_balance_wallet,
-                          onTab: () {},
-                        ),
-                      ),
-                    ],
-                  ),
-                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -153,23 +74,53 @@ class HomePage extends StatelessWidget {
                         child: _customButton(
                           context: context,
                           name: 'ABOUT US',
-                          color: Colors.blue.shade400,
-                          iconData: Icons.departure_board,
-                          onTab: () {},
+                          color: Colors.lightGreen,
+                          image: "asset/image/about.png",
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.deptechlist);
+                          },
                         ),
                       ),
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'DOWNLOAD',
-                          color: Colors.blue.shade400,
+                          name: 'DOENLOAD',
+                          color: Colors.lightGreen,
+                          iconData: Icons.download,
+                          onTab: () {},
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'DEPARTMENT',
+                          color: Colors.lightGreen,
+                          iconData: Icons.departure_board,
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.department);
+                          },
+                        ),
+                      ),
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'DEPARTMENT TEACHER LIST',
+                          color: Colors.lightGreen,
                           iconData: Icons.account_balance_wallet,
                           onTab: () {},
                         ),
                       ),
                     ],
                   ),
-                   Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -177,7 +128,31 @@ class HomePage extends StatelessWidget {
                         child: _customButton(
                           context: context,
                           name: 'JOB CELL',
-                          color: Colors.blue.shade400,
+                          color: Colors.lightGreen,
+                          iconData: Icons.departure_board,
+                          onTab: () {},
+                        ),
+                      ),
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'RESULT',
+                          color: Colors.lightGreen,
+                          iconData: Icons.account_balance_wallet,
+                          onTab: () {},
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'GALLARY',
+                          color: Colors.lightGreen,
                           iconData: Icons.departure_board,
                           onTab: () {},
                         ),
@@ -186,22 +161,22 @@ class HomePage extends StatelessWidget {
                         child: _customButton(
                           context: context,
                           name: 'FOCAL POINT',
-                          color: Colors.blue.shade400,
+                          color: Colors.lightGreen,
                           iconData: Icons.account_balance_wallet,
                           onTab: () {},
                         ),
                       ),
                     ],
                   ),
-                   Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'INVENTION CORNER ',
-                          color: Colors.blue.shade400,
+                          name: 'STUDENT INFO',
+                          color: Colors.lightGreen,
                           iconData: Icons.departure_board,
                           onTab: () {},
                         ),
@@ -209,9 +184,32 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'CONTUCT US',
-                          color: Colors.blue.shade400,
+                          name: 'INNOVATION CORNER',
+                          color: Colors.lightGreen,
                           iconData: Icons.account_balance_wallet,
+                          onTab: () {},
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'NOTICE',
+                          color: Colors.blue,
+                          iconData: Icons.departure_board,
+                          onTab: () {},
+                        ),
+                      ),
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'CONTACT US',
+                          color: Colors.blue,
                           onTab: () {},
                         ),
                       ),
@@ -229,9 +227,9 @@ class HomePage extends StatelessWidget {
     @required Color? color,
     @required String? name,
     @required IconData? iconData,
-    @required VoidCallback? onTab, String, String? image ,
+    @required VoidCallback? onTab,
+    String? image,
   }) {
-    var image;
     return GestureDetector(
       onTap: onTab,
       child: Container(
@@ -239,7 +237,7 @@ class HomePage extends StatelessWidget {
         padding: EdgeInsets.all(10.0),
         margin: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
         // width: MediaQuery.of(context!).size.width * .44,
-        height: 120.0,
+        height: 100.0,
         decoration: BoxDecoration(
             color: color, borderRadius: BorderRadius.circular(15.0)),
 
@@ -249,17 +247,15 @@ class HomePage extends StatelessWidget {
           children: [
             Image.asset(
               '$image',
-              height:50.0,
-              width: 50.0,
-              
-              ),
-          
-        
-           
-      
+              height: 50,
+              width: 50,
+            ),
             Text(
               '$name',
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
             ),
           ],
         ),
