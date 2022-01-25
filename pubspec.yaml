@@ -63,6 +63,8 @@ flutter:
     - asset/image.jpg
     - asset/niloy.jpg
     - asset/json/depatteacherlist.json
+    - asset/image/mujib.jpg
+    - asset/image/about.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  get image => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,19 +43,16 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Department',
+                          name: 'MUJIB CORNER',
                           color: Colors.lightGreen,
-                          iconData: Icons.near_me,
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.department);
-                          },
+                          image: "asset/image/mujib.jpg",
+                          onTab: () {},
                         ),
                       ),
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Teacher List',
+                          name: 'ADMINISTRATION',
                           color: Colors.lightGreen,
                           iconData: Icons.account_box,
                           onTab: () {
@@ -71,9 +70,9 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Department Teacher list',
-                          color: Colors.redAccent,
-                          iconData: Icons.departure_board,
+                          name: 'ABOUT US',
+                          color: Colors.lightGreen,
+                          image: "asset/image/about.png",
                           onTab: () {
                             Navigator.pushNamed(
                                 context, Appconstant.deptechlist);
@@ -83,7 +82,34 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Department',
+                          name: 'DOENLOAD',
+                          color: Colors.lightGreen,
+                          iconData: Icons.download,
+                          onTab: () {},
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'DEPARTMENT',
+                          color: Colors.lightGreen,
+                          iconData: Icons.departure_board,
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.department);
+                          },
+                        ),
+                      ),
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'DEPARTMENT TEACHER LIST',
                           color: Colors.lightGreen,
                           iconData: Icons.account_balance_wallet,
                           onTab: () {},
@@ -98,7 +124,7 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Department',
+                          name: 'JOB CELL',
                           color: Colors.lightGreen,
                           iconData: Icons.departure_board,
                           onTab: () {},
@@ -107,9 +133,80 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Department',
+                          name: 'RESULT',
                           color: Colors.lightGreen,
                           iconData: Icons.account_balance_wallet,
+                          onTab: () {},
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'GALLARY',
+                          color: Colors.lightGreen,
+                          iconData: Icons.departure_board,
+                          onTab: () {},
+                        ),
+                      ),
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'FOCAL POINT',
+                          color: Colors.lightGreen,
+                          iconData: Icons.account_balance_wallet,
+                          onTab: () {},
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'STUDENT INFO',
+                          color: Colors.lightGreen,
+                          iconData: Icons.departure_board,
+                          onTab: () {},
+                        ),
+                      ),
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'INNOVATION CORNER',
+                          color: Colors.lightGreen,
+                          iconData: Icons.account_balance_wallet,
+                          onTab: () {},
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'NOTICE',
+                          color: Colors.blue,
+                          iconData: Icons.departure_board,
+                          onTab: () {},
+                        ),
+                      ),
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'CONTACT US',
+                          color: Colors.blue,
                           onTab: () {},
                         ),
                       ),
@@ -128,6 +225,7 @@ class HomePage extends StatelessWidget {
     @required String? name,
     @required IconData? iconData,
     @required VoidCallback? onTab,
+    String? image,
   }) {
     return GestureDetector(
       onTap: onTab,
@@ -136,7 +234,7 @@ class HomePage extends StatelessWidget {
         padding: EdgeInsets.all(10.0),
         margin: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
         // width: MediaQuery.of(context!).size.width * .44,
-        height: 120.0,
+        height: 100.0,
         decoration: BoxDecoration(
             color: color, borderRadius: BorderRadius.circular(15.0)),
 
@@ -144,9 +242,10 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              iconData,
-              size: 50.0,
+            Image.asset(
+              '$image',
+              height: 50,
+              width: 50,
             ),
             Text(
               '$name',
