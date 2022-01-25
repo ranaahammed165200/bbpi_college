@@ -6,7 +6,8 @@ import 'package:bbpi_college/screen/department_details_view.dart';
 import 'package:bbpi_college/screen/department_teacherlistview.dart';
 
 import 'package:bbpi_college/screen/homepage.dart';
-import 'package:bbpi_college/screen/teacherveiw.dart';
+import 'package:bbpi_college/screen/mujibview.dart';
+
 import 'package:flutter/cupertino.dart';
 
 class Approutes {
@@ -15,7 +16,7 @@ class Approutes {
     Appconstant.homepage: (context) => const HomePage(),
     Appconstant.department: (context) => DepartMent(),
     Appconstant.departmentdetails: (context) => DepartmentDetails(),
-    Appconstant.teacherviewPage: (context) => TeacherView(),
     Appconstant.deptechlist: (context) => DepartmentTeacherView(),
+    Appconstant.mujib_view: (context) => MujibView(),
   };
 }

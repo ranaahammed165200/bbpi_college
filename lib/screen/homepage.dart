@@ -9,8 +9,11 @@ class HomePage extends StatelessWidget {
 
   get image => null;
 
+  get asset => null;
+
   @override
   Widget build(BuildContext context) {
+    var administrator;
     return Scaffold(
         drawer: DrawerMy(),
         backgroundColor: Colors.grey.shade400,
@@ -46,7 +49,10 @@ class HomePage extends StatelessWidget {
                           name: 'MUJIB CORNER',
                           color: Colors.lightGreen,
                           image: "asset/image/mujib.jpg",
-                          onTab: () {},
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.mujib_view);
+                          },
                         ),
                       ),
                       Expanded(
@@ -54,11 +60,8 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'ADMINISTRATION',
                           color: Colors.lightGreen,
-                          iconData: Icons.account_box,
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.teacherviewPage);
-                          },
+                          image: 'asset/image/administrator.png',
+                          onTab: () {},
                         ),
                       ),
                     ],
@@ -249,7 +252,10 @@ class HomePage extends StatelessWidget {
             ),
             Text(
               '$name',
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
             ),
           ],
         ),
