@@ -75,7 +75,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'ABOUT US',
                           color: Colors.lightGreen,
-                          image: "asset/image/about.png",
+                          image: "asset/image/personal.png",
                           onTab: () {
                             
                           },
@@ -104,14 +104,14 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'DOWNLOAD',
                           color: Colors.lightGreen,
-                          image: 'asset/image/downloadp.png',
+                          image: 'asset/image/download.png',
                           onTab: () {
                            
                           },
                         ),
                       ),
                       Expanded(
-                        child: _customButton(
+                        child:_customButton(
                           context: context,
                           name: 'DEPARTMENT TEACHER LIST',
                           color: Colors.lightGreen,
@@ -130,7 +130,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'JOB CELL',
                           color: Colors.lightGreen,
-                          iconData: Icons.departure_board,
+                          image: 'asset/image/receptionist.png',
                           onTab: () {},
                         ),
                       ),
@@ -139,7 +139,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'RESULT',
                           color: Colors.lightGreen,
-                          iconData: Icons.account_balance_wallet,
+                         image: 'asset/image/survey-results.png',
                           onTab: () {},
                         ),
                       ),
@@ -154,7 +154,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'GALLARY',
                           color: Colors.lightGreen,
-                          iconData: Icons.departure_board,
+                          image: 'asset/image/gallery.png',
                           onTab: () {},
                         ),
                       ),
@@ -163,7 +163,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'FOCAL POINT',
                           color: Colors.lightGreen,
-                          iconData: Icons.account_balance_wallet,
+                         image: 'asset/image/focal point.jpg',
                           onTab: () {},
                         ),
                       ),
@@ -178,7 +178,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'STUDENT INFO',
                           color: Colors.lightGreen,
-                          iconData: Icons.departure_board,
+                          image: 'asset/image/read.png',
                           onTab: () {},
                         ),
                       ),
@@ -201,7 +201,7 @@ class HomePage extends StatelessWidget {
                         child: _customButton(
                           context: context,
                           name: 'NOTICE',
-                          color: Colors.blue,
+                          color: Colors.lightGreen,
                           iconData: Icons.departure_board,
                           onTab: () {},
                         ),
@@ -210,7 +210,7 @@ class HomePage extends StatelessWidget {
                         child: _customButton(
                           context: context,
                           name: 'CONTACT US',
-                          color: Colors.blue,
+                          color: Colors.lightGreen,
                           onTab: () {},
                         ),
                       ),

@@ -62,15 +62,20 @@ flutter:
    
     - asset/image.jpg
     - asset/niloy.jpg
-    - asset/json/depatteacherlist.json
     - asset/image/mujib.jpg
-    - asset/image/about.png
     - asset/json/mujib.json
     - asset/image/mujibpic.jpg
-    - asset/image/downloadp.png
     - asset/image/department.png
     - asset/image/teamwork.png
     - asset/image/administrator.png
+    - asset/image/download.png
+    - asset/image/personal.png
+    - asset/image/receptionist.png
+    - asset/image/survey-results.png
+    - asset/image/gallery.png
+    - asset/image/focal point.jpg
+    - asset/image/read.png
+    - asset/json/department_list.json
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

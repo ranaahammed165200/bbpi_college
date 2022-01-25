@@ -13,21 +13,25 @@ class DepartMent extends StatelessWidget {
     List<Department> depList = [
       Department(
         id: 1,
-        name: 'CMT',
+        name: 'COMPUTER TECHNOLOGY',
         img: '',
         details: DepartmentDetailsModel(
             id: 1, name: 'bng', title: 'bangla', img: '', dec: 'Cmt class'),
       ),
       Department(
         id: 2,
-        name: 'EMT',
+        name: 'ELECTROMEDICAL TECCHNOLOGY',
         img: '',
         details: DepartmentDetailsModel(
             id: 2, name: 'emt', title: 'Emt', img: '', dec: 'Cmt class'),
             
       ),
-      Department(id: 3, name: 'RAC', img: ''),
-      Department(id: 1, name: 'AIDT', img: ''),
+      Department(id: 3,
+       name: 'REFRIGERATION AND AIR- CONDITION TECHNOLOGY', 
+       img: '',
+       details: DepartmentDetailsModel(id:3,name: 'RAT',title: 'RAT',dec: 'RAT CLASS')
+       ),
+      Department(id: 4, name: 'ARCHITECTURE AND INTERIOR DESIGN TECHNOLOGY', img: ''),
     ];
     return Scaffold(
       appBar: AppBar(
@@ -51,10 +55,14 @@ class DepartMent extends StatelessWidget {
                           arguments: engDept);
                     }
                  
+                 
                   },
                   child: Text('${depList.elementAt(index).name}'),
                   style: ElevatedButton.styleFrom(
+                   
                       padding: EdgeInsets.symmetric(vertical: 50.0)),
+                      
+                      
                 ));
           }),
     );
