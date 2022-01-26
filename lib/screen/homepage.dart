@@ -36,6 +36,13 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
+                  Container(
+                    height: 200,
+                    width: 500,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('asset/image/contact.png'))),
+                  ),
                   SizedBox(
                     height: 10.0,
                   ),

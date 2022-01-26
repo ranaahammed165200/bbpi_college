@@ -1,4 +1,5 @@
 import 'dart:html';
+import 'dart:ui';
 
 import 'package:bbpi_college/models/mujib_model.dart';
 import 'package:flutter/material.dart';
@@ -28,8 +29,14 @@ class MujibView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset('${mujibModel.img}'),
-                    Text('${mujibModel.mujibTital}'),
-                    Text('${mujibModel.mujibDefinition}'),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text('${mujibModel.mujibTital}'),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text('${mujibModel.mujibDefinition}'),
+                    ),
                   ],
                 );
               });
