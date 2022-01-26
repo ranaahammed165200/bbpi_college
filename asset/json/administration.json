@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "img":"asset/image/principal.jpg",
+        "name":" Engr.Abul kalam azad",
+        "position":"Principal (in charge)",
+        "education":"M.Sc in Food Technology \n B.Sc in Agricultural Engineering \n -Bangladesh Agricultural University",
+        "contact":"01926-022837"
+       
+    
+
+    },
+    {
+
+        "id":1,
+        "img":"asset/image/Ariful-Haque.png",
+        "name":" Md. Ariful Haque",
+        "position":"Registrar",
+        "education":"MSS \n -Dhaka University",
+        "contact":"01718-743988"
+    }
+]

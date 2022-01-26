@@ -75,7 +75,17 @@ flutter:
     - asset/image/gallery.png
     - asset/image/focal point.jpg
     - asset/image/read.png
-    - asset/json/department_list.json
+    - asset/json/technology.json
+    - asset/image/innovation.png
+    - asset/image/notice.png
+    - asset/image/contact.png
+    - asset/image/computer.png
+    - asset/image/architecture.png
+    - asset/image/Electromedical.png
+    - asset/image/RAT.png
+    - asset/json/administration.json
+    - asset/image/principal.jpg
+    - asset/image/Ariful-Haque.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

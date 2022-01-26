@@ -61,7 +61,10 @@ class HomePage extends StatelessWidget {
                           name: 'ADMINISTRATION',
                           color: Colors.lightGreen,
                           image: 'asset/image/administrator.png',
-                          onTab: () {},
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.administration);
+                          },
                         ),
                       ),
                     ],
@@ -77,7 +80,7 @@ class HomePage extends StatelessWidget {
                           color: Colors.lightGreen,
                           image: "asset/image/personal.png",
                           onTab: () {
-                            
+                            Navigator.pushNamed(context, Appconstant.aboutus);
                           },
                         ),
                       ),
@@ -88,8 +91,8 @@ class HomePage extends StatelessWidget {
                           color: Colors.lightGreen,
                           image: 'asset/image/department.png',
                           onTab: () {
-                             Navigator.pushNamed(
-                                context, Appconstant.department);
+                            Navigator.pushNamed(
+                                context, Appconstant.technology_view);
                           },
                         ),
                       ),
@@ -105,13 +108,11 @@ class HomePage extends StatelessWidget {
                           name: 'DOWNLOAD',
                           color: Colors.lightGreen,
                           image: 'asset/image/download.png',
-                          onTab: () {
-                           
-                          },
+                          onTab: () {},
                         ),
                       ),
                       Expanded(
-                        child:_customButton(
+                        child: _customButton(
                           context: context,
                           name: 'DEPARTMENT TEACHER LIST',
                           color: Colors.lightGreen,
@@ -139,7 +140,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'RESULT',
                           color: Colors.lightGreen,
-                         image: 'asset/image/survey-results.png',
+                          image: 'asset/image/survey-results.png',
                           onTab: () {},
                         ),
                       ),
@@ -163,7 +164,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'FOCAL POINT',
                           color: Colors.lightGreen,
-                         image: 'asset/image/focal point.jpg',
+                          image: 'asset/image/focal point.jpg',
                           onTab: () {},
                         ),
                       ),
@@ -187,7 +188,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'INNOVATION CORNER',
                           color: Colors.lightGreen,
-                          iconData: Icons.account_balance_wallet,
+                          image: 'asset/image/innovation.png',
                           onTab: () {},
                         ),
                       ),
@@ -202,7 +203,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'NOTICE',
                           color: Colors.lightGreen,
-                          iconData: Icons.departure_board,
+                          image: 'asset/image/notice.png',
                           onTab: () {},
                         ),
                       ),
@@ -211,6 +212,7 @@ class HomePage extends StatelessWidget {
                           context: context,
                           name: 'CONTACT US',
                           color: Colors.lightGreen,
+                          image: 'asset/image/contact.png',
                           onTab: () {},
                         ),
                       ),
@@ -246,17 +248,21 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              '$image',
-              height: 50,
-              width: 50,
+            Expanded(
+              child: Image.asset(
+                '$image',
+                height: 40,
+                width: 50,
+              ),
             ),
-            Text(
-              '$name',
-              style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white),
+            Expanded(
+              child: Text(
+                '$name',
+                style: TextStyle(
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
             ),
           ],
         ),
