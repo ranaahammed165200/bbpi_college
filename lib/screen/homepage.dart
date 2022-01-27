@@ -192,9 +192,9 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'CONTACT US',
+                          name: 'Importants Links',
                           color: Colors.lightGreen,
-                          image: 'asset/image/contact.png',
+                          image: 'asset/image/world-wide-web.png',
                           onTab: () {
                             Navigator.pushNamed(
                                 context, Appconstant.WebLinkView);

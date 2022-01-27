@@ -39,12 +39,16 @@ class _WebLinkViewState extends State<WebLinkView> {
       body: ListView.builder(
         itemCount: webModel.length,
         itemBuilder: (context, index) {
-          print(webModel.length);
+          SizedBox(height: 10.0,);
+          //print(webModel.length);
           return ElevatedButton(
               onPressed: () {
                 _launchURL();
               },
-              child: Text('${webModel.elementAt(index).name}'));
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text('${webModel.elementAt(index).name}'),
+              ));
                
         },
       ),

@@ -17,7 +17,7 @@ class DrawerMy extends StatelessWidget {
                 'Brahmanbaria Polytechnic institute',
                 style: TextStyle(color: Colors.red.shade900),
               ),
-              accountEmail: Text("http://www.bbpi.gov.bd/",
+              accountEmail: Text("bbariapoly@yahoo.com",
                   style: TextStyle(color: Colors.red.shade900),),
               currentAccountPicture: CircleAvatar(
                 child: ClipOval(
