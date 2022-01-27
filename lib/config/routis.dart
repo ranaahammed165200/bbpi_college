@@ -3,7 +3,9 @@ import 'dart:js';
 import 'package:bbpi_college/config/app_constant.dart';
 import 'package:bbpi_college/models/about.dart';
 import 'package:bbpi_college/screen/administration_view.dart';
+import 'package:bbpi_college/screen/gallry_view.dart';
 import 'package:bbpi_college/screen/homepage.dart';
+import 'package:bbpi_college/screen/jobcellveiw.dart';
 import 'package:bbpi_college/screen/mujibview.dart';
 import 'package:bbpi_college/screen/technology_view.dart';
 
@@ -17,5 +19,7 @@ class Approutes {
     Appconstant.technology_view: (context) => TechnologyView(),
     Appconstant.aboutus: (context) => AboutUs(),
     Appconstant.administration: (context) => AdministrationView(),
+    Appconstant.gallarryveiw: (context) => GallaryView(),
+    Appconstant.jobcellveiw:(context)=>JobcellVeiw()
   };
 }

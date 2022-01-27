@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "img":"asset/image/polytechnic.jpg"
+    },
+    {
+        "id":1,
+        "img":"asset/image/sir.jpg"
+    },
+    {
+        "id":1,
+        "img":"asset/image/robort.jpg"
+    },
+    {
+        "id":1,
+        "img":"asset/image/bbpi.jpg"
+    },
+    {
+        "id":1,
+        "img":"asset/image/audt.jpg"
+    },
+    {
+        "id":1,
+        "img":"asset/image/game.jpg"
+    },
+    {
+        "id":1,
+        "img":"asset/image/classroom.jpg"
+    }
+]

@@ -37,11 +37,13 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
+                    margin: EdgeInsets.only(top: 10, left: 10.0, right: 5.0),
                     height: 200,
-                    width: 500,
+                    width: double.infinity,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('asset/image/contact.png'))),
+                            fit: BoxFit.fill,
+                            image: AssetImage('asset/image/polytechnic.jpg'))),
                   ),
                   SizedBox(
                     height: 10.0,
@@ -94,7 +96,7 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'DEPARTMENT',
+                          name: 'TECHNOLOGY',
                           color: Colors.lightGreen,
                           image: 'asset/image/department.png',
                           onTab: () {
@@ -112,16 +114,19 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'DOWNLOAD',
+                          name: 'GALLARY',
                           color: Colors.lightGreen,
-                          image: 'asset/image/download.png',
-                          onTab: () {},
+                          image: 'asset/image/gallery.png',
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.gallarryveiw);
+                          },
                         ),
                       ),
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'DEPARTMENT TEACHER LIST',
+                          name: 'TEACHER & STAFFS',
                           color: Colors.lightGreen,
                           image: 'asset/image/teamwork.png',
                           onTab: () {},
@@ -139,31 +144,10 @@ class HomePage extends StatelessWidget {
                           name: 'JOB CELL',
                           color: Colors.lightGreen,
                           image: 'asset/image/receptionist.png',
-                          onTab: () {},
-                        ),
-                      ),
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'RESULT',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/survey-results.png',
-                          onTab: () {},
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'GALLARY',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/gallery.png',
-                          onTab: () {},
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.jobcellveiw);
+                          },
                         ),
                       ),
                       Expanded(
@@ -184,33 +168,9 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'STUDENT INFO',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/read.png',
-                          onTab: () {},
-                        ),
-                      ),
-                      Expanded(
-                        child: _customButton(
-                          context: context,
                           name: 'INNOVATION CORNER',
                           color: Colors.lightGreen,
                           image: 'asset/image/innovation.png',
-                          onTab: () {},
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'NOTICE',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/notice.png',
                           onTab: () {},
                         ),
                       ),

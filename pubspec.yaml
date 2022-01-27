@@ -68,16 +68,12 @@ flutter:
     - asset/image/department.png
     - asset/image/teamwork.png
     - asset/image/administrator.png
-    - asset/image/download.png
     - asset/image/personal.png
     - asset/image/receptionist.png
-    - asset/image/survey-results.png
     - asset/image/gallery.png
     - asset/image/focal point.jpg
-    - asset/image/read.png
     - asset/json/technology.json
     - asset/image/innovation.png
-    - asset/image/notice.png
     - asset/image/contact.png
     - asset/image/computer.png
     - asset/image/architecture.png
@@ -86,6 +82,17 @@ flutter:
     - asset/json/administration.json
     - asset/image/principal.jpg
     - asset/image/Ariful-Haque.png
+    - asset/image/baria.jpg
+    - asset/json/gallary.json
+    - asset/image/sir.jpg
+    - asset/image/robort.jpg
+    - asset/image/bbpi.jpg
+    - asset/image/audt.jpg
+    - asset/image/polytechnic.jpg
+    - asset/image/game.jpg
+    - asset/image/classroom.jpg
+    - asset/json/jobcell.json
+    - asset/image/ba.jpg
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,3 +1,4 @@
+import 'package:bbpi_college/config/app_constant.dart';
 import 'package:flutter/material.dart';
 
 class DrawerMy extends StatelessWidget {
@@ -12,12 +13,16 @@ class DrawerMy extends StatelessWidget {
           GestureDetector(
             onTap: () => Navigator.pop(context),
             child: UserAccountsDrawerHeader(
-              accountName: Text('Rana Ahammed'),
-              accountEmail: Text("ranaahammed165200@gmail.com"),
+              accountName: Text(
+                'Brahmanbaria Polytechnic institute',
+                style: TextStyle(color: Colors.red.shade900),
+              ),
+              accountEmail: Text("http://www.bbpi.gov.bd/",
+                  style: TextStyle(color: Colors.red.shade900)),
               currentAccountPicture: CircleAvatar(
                 child: ClipOval(
                   child: Image.asset(
-                    "asset/image.jpg",
+                    "asset/niloy.jpg",
                     height: 100,
                     width: 100,
                     fit: BoxFit.cover,
@@ -26,19 +31,19 @@ class DrawerMy extends StatelessWidget {
               ),
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: NetworkImage(
-                        "https://thumbs.dreamstime.com/b/light-green-gradient-abstract-background-delicate-leaves-pattern-173653909.jpg",
-                      ),
+                      image: AssetImage('asset/image/ba.jpg'),
                       fit: BoxFit.cover)),
             ),
           ),
           ListTile(
             leading: Icon(Icons.home),
             title: Text('Home'),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, Appconstant.homepage);
+            },
           ),
           ListTile(
-            leading: Icon(Icons.home),
+            leading: Icon(Icons.add_circle),
             title: Text('Administrator'),
             onTap: () {},
           ),
