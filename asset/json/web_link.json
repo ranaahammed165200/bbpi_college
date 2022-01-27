@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "name":"BBPI",
+        "web_url":"http://www.bbpi.gov.bd/"
+    },
+    {
+        "id":2,
+        "name":"Bangladesh Technical Education Board (BTEB)",
+        "web_url":"http://www.bteb.gov.bd/"
+    }
+]

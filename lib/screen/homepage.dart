@@ -15,9 +15,21 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var administrator;
     return Scaffold(
-        drawer: DrawerMy(),
+        endDrawer: DrawerMy(),
         backgroundColor: Colors.grey.shade400,
         appBar: AppBar(
+          leading: CircleAvatar(
+            child: ClipOval(
+              child: Image.asset(
+                "asset/niloy.jpg",
+                height: 100,
+                width: 100,
+                fit: BoxFit.cover,
+              ),
+            ),
+
+            // child: Image.asset('asset/niloy.jpg'),
+          ),
           title: Text('HomePage'),
         ),
         body: SizedBox(
@@ -129,7 +141,10 @@ class HomePage extends StatelessWidget {
                           name: 'TEACHER & STAFFS',
                           color: Colors.lightGreen,
                           image: 'asset/image/teamwork.png',
-                          onTab: () {},
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.teacher_view);
+                          },
                         ),
                       ),
                     ],
@@ -180,7 +195,10 @@ class HomePage extends StatelessWidget {
                           name: 'CONTACT US',
                           color: Colors.lightGreen,
                           image: 'asset/image/contact.png',
-                          onTab: () {},
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.WebLinkView);
+                          },
                         ),
                       ),
                     ],

@@ -1,4 +1,5 @@
 import 'package:bbpi_college/screen/mujibview.dart';
+import 'package:bbpi_college/screen/web_link_veiw.dart';
 
 class Appconstant {
   static final homepage = '/Homepage';
@@ -8,4 +9,6 @@ class Appconstant {
   static const administration = '/Administraton';
   static const gallarryveiw = '/Gallaryveiw';
   static const jobcellveiw = '/Jobcellveiw';
+  static const WebLinkView = '/Weblinkview';
+  static const teacher_view = '/Teacherview';
 }

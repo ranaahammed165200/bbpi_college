@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  url_launcher: ^6.0.18
 
 dev_dependencies:
   flutter_test:
@@ -62,37 +63,9 @@ flutter:
    
     - asset/image.jpg
     - asset/niloy.jpg
-    - asset/image/mujib.jpg
-    - asset/json/mujib.json
-    - asset/image/mujibpic.jpg
-    - asset/image/department.png
-    - asset/image/teamwork.png
-    - asset/image/administrator.png
-    - asset/image/personal.png
-    - asset/image/receptionist.png
-    - asset/image/gallery.png
-    - asset/image/focal point.jpg
-    - asset/json/technology.json
-    - asset/image/innovation.png
-    - asset/image/contact.png
-    - asset/image/computer.png
-    - asset/image/architecture.png
-    - asset/image/Electromedical.png
-    - asset/image/RAT.png
-    - asset/json/administration.json
-    - asset/image/principal.jpg
-    - asset/image/Ariful-Haque.png
-    - asset/image/baria.jpg
-    - asset/json/gallary.json
-    - asset/image/sir.jpg
-    - asset/image/robort.jpg
-    - asset/image/bbpi.jpg
-    - asset/image/audt.jpg
-    - asset/image/polytechnic.jpg
-    - asset/image/game.jpg
-    - asset/image/classroom.jpg
-    - asset/json/jobcell.json
-    - asset/image/ba.jpg
+    - asset/image/
+    - asset/json/
+   
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

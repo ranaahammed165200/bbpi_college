@@ -18,7 +18,7 @@ class DrawerMy extends StatelessWidget {
                 style: TextStyle(color: Colors.red.shade900),
               ),
               accountEmail: Text("http://www.bbpi.gov.bd/",
-                  style: TextStyle(color: Colors.red.shade900)),
+                  style: TextStyle(color: Colors.red.shade900),),
               currentAccountPicture: CircleAvatar(
                 child: ClipOval(
                   child: Image.asset(
