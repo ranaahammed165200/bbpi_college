@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:bbpi_college/models/jobcell.dart';
 import 'package:bbpi_college/repositories/job_repo.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +25,7 @@ class JobcellVeiw extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text('${admList.elementAt(index).position}'),
+                    child: Text('${admList.elementAt(index).position}',style:TextStyle(color: Colors.red,fontSize: 20.0),),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),

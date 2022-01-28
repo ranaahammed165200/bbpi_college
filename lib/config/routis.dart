@@ -5,6 +5,9 @@ import 'package:bbpi_college/models/about.dart';
 import 'package:bbpi_college/models/innovation_idea_submit.dart';
 import 'package:bbpi_college/models/innovation_robort.dart';
 import 'package:bbpi_college/screen/administration_view.dart';
+import 'package:bbpi_college/screen/contactview.dart';
+import 'package:bbpi_college/screen/devoloperview.dart';
+
 import 'package:bbpi_college/screen/focalveiw.dart';
 import 'package:bbpi_college/screen/gallry_view.dart';
 import 'package:bbpi_college/screen/homepage.dart';
@@ -33,5 +36,8 @@ class Approutes {
     Appconstant.Innovation:(context)=>Innovation(),
     Appconstant.innovationrobort:(context)=>InnovationRobort(),
     Appconstant.innovationveiw:(context)=>InnovationVeiw(),
+    Appconstant.contactus:(context)=>ContactView(),
+    Appconstant.devoloperview:(context)=>Devoloperview()
+  
   };
 }

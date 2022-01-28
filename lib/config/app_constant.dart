@@ -16,4 +16,7 @@ class Appconstant {
   static const Innovation='/innovation';
   static const innovationrobort='/innovationro';
   static const innovationveiw='/innovationveiw';
+  static const contactus='/contactveiw';
+  static const devoloperview='/devoloperView';
+
 }

@@ -15,23 +15,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var administrator;
     return Scaffold(
-        endDrawer: DrawerMy(),
+        drawer: DrawerMy(),
         backgroundColor: Colors.grey.shade400,
         appBar: AppBar(
-          leading: CircleAvatar(
-            child: ClipOval(
-              child: Image.asset(
-                "asset/niloy.jpg",
-                height: 100,
-                width: 100,
-                fit: BoxFit.cover,
-              ),
-            ),
-
-            // child: Image.asset('asset/niloy.jpg'),
-          ),
-          title: Text('HomePage'),
-        ),
+          
+          actions: [Image.asset('asset/image/bbpi_banner.jpg')]),
+       
         body: SizedBox(
           height: MediaQuery.of(context).size.height,
           width: double.maxFinite,
@@ -54,7 +43,7 @@ class HomePage extends StatelessWidget {
                     width: double.infinity,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            fit: BoxFit.fill,
+                            fit: BoxFit.cover,
                             image: AssetImage('asset/image/polytechnic.jpg'))),
                   ),
                   SizedBox(
@@ -178,6 +167,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ],
                   ),
+                 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -185,26 +175,25 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'INNOVATION CORNER',
+                          name: 'CONTACT US',
                           color: Colors.lightGreen,
-                          image: 'asset/image/innovation.png',
+                          image: 'asset/image/contact.png',
                           onTab: () {
-                            Navigator.pushNamed(context, Appconstant.innovationveiw);
+                            Navigator.pushNamed(context,  Appconstant.contactus);
                           },
                         ),
                       ),
-                      Expanded(
+                        Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Importants Links',
+                          name: 'DEVOLOPERS',
                           color: Colors.lightGreen,
-                          image: 'asset/image/world-wide-web.png',
+                          image: 'asset/image/coding.png',
                           onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.WebLinkView);
+                            Navigator.pushNamed(context,Appconstant.devoloperview );
                           },
                         ),
-                      ),
+                      )
                     ],
                   ),
                 ],

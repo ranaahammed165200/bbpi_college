@@ -8,7 +8,12 @@ class Innovation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Innovation Idea submit"),),
-      body:Text('Dear Students please submit your innovation idea through this\n\n\nemail: bbariapoly@yahoo.com\n\n\nor\n\n\nCall: 01926022837') ,
+      body:
+      
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text('Dear Students please submit your innovation idea through this\n\nemail: bbariapoly@yahoo.com\nor\n\Call: 01926022837'),
+      ) ,
 
     );
   }

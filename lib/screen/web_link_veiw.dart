@@ -47,8 +47,9 @@ class _WebLinkViewState extends State<WebLinkView> {
               },
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text('${webModel.elementAt(index).name}'),
-              ));
+                
+                child: Text('${webModel.elementAt(index).name}')),
+              );
                
         },
       ),

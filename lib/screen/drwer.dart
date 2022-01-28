@@ -43,78 +43,65 @@ class DrawerMy extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.add_circle),
-            title: Text('Administrator'),
-            onTap: () {},
+            leading: Icon(Icons.account_box_outlined),
+            title: Text('About us'),
+            onTap: () {
+              Navigator.pushNamed(context,Appconstant.focal_view );
+            },
           ),
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text('About us'),
-            onTap: () {},
+            leading: Icon(Icons.collections),
+            title: Text('Gallary'),
+            onTap: () {
+              Navigator.pushNamed(context, Appconstant.gallarryveiw);
+            },
           ),
           Divider(
             color: Colors.green,
           ),
+         
+         
           ListTile(
-            leading: Icon(Icons.download),
-            title: Text('Download'),
-            onTap: () {},
+            leading: Icon(Icons.history),
+            title: Text('History'),
+            onTap: () {
+              Navigator.pushNamed(context, Appconstant.aboutus);
+            },
           ),
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Technology'),
+            leading: Icon(Icons.download_done),
+            title: Text('Dowonloads'),
             onTap: () {},
           ),
+           Divider(
+            color: Colors.green,
+          ),
+         
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Job cell'),
+            leading: Icon(Icons.desktop_windows),
+            trailing: Icon(Icons.panorama_wide_angle_rounded),
+            title: Text('Desktop site'),
             onTap: () {},
+            
           ),
+           Divider(
+            color: Colors.green,
+          ),
+         
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text('teachers and staffs'),
+            leading: Icon(Icons.settings),
+            title: Text('Settings'),
             onTap: () {},
           ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Results'),
-            onTap: () {},
+         
+           ListTile(
+            leading: Icon(Icons.developer_board,),
+            title: Text('Devoloper Information'),
+            onTap: () {
+              Navigator.pushNamed(context, Appconstant.devoloperview);
+            },
           ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Gallary'),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Mojib Corner'),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Focal Point'),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Students Info'),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Innovation Cornar'),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Notice'),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Contact US'),
-            onTap: () {},
-          ),
+         
         ],
       ),
     );

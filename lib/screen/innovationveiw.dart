@@ -9,26 +9,34 @@ class InnovationVeiw extends StatelessWidget {
     return Scaffold(appBar: AppBar(title: Text('INNOVATION CORNER'),),
     body:Padding(
       padding: const EdgeInsets.all(20.0),
-      child: Container(
+    
         
-        height: 100.0,
+       
         
         child: Column(children: [
-          ElevatedButton(onPressed: () {
-            Navigator.pushNamed(context, Appconstant.Innovation );
-            
-          }, child: Text('Innovation Idea Submit')),
+          Container(
+            height: 50.0,
+            width: 700.0,
+            child: ElevatedButton(onPressed: () {
+              Navigator.pushNamed(context, Appconstant.Innovation );
+              
+            }, child: Text('Innovation Idea Submit')),
+          ),
           SizedBox(height: 10.0,),
-          ElevatedButton(onPressed: () {
-            Navigator.pushNamed(context, Appconstant.innovationrobort);
-            
-          }, child:Text('Robort Mr.Electromedical'))
+          Container(
+            height: 50.0,
+            width: 700.0,
+            child: ElevatedButton(onPressed: () {
+              Navigator.pushNamed(context, Appconstant.innovationrobort);
+              
+            }, child:Text('Robort Mr.Electromedical')),
+          )
           
           
 
         ],),
       ),
-    )
     );
+    
   }
 }

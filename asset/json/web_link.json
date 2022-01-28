@@ -1,12 +1,43 @@
 [
     {
         "id":1,
-        "name":"BBPI",
+        "name":"Brahmanbaria Polytechnic institute",
         "web_url":"http://www.bbpi.gov.bd/"
     },
     {
         "id":2,
         "name":"Bangladesh Technical Education Board (BTEB)",
         "web_url":"http://www.bteb.gov.bd/"
+    },
+    {
+        "id":3,
+        "name":"Directorate of Technical Education (DTE)",
+        "web_url":"http://www.techedu.gov.bd/"
+    },
+    {
+        "id":4,
+        "name":"স্কিলস এ্যান্ড ট্রেনিং এনহ্যান্সমেন্ট প্রজেক্ট (STEP)",
+        "web_url":"http://www.step-dte.gov.bd/"
+    },
+    {
+        "id":5,
+        "name":"কারিগরি ও মাদ্রাসা শিক্ষা বিভাগ, শিক্ষা মন্ত্রালয়",
+        "web_url":"http://tmed.gov.bd/"
+    },
+    {
+        "id":6,
+        "name":"বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড",
+        "web_url":"http://www.bmeb.gov.bd/"
+    },
+    {
+        "id":7,
+        "name":"Dhaka Polytechnic Institue",
+        "web_url":"http://dpi.gov.bd/"
+    },
+    {
+        "id":8,
+        "name":"Diploma Admission System",
+        "web_url":"http://www.btebadmission.gov.bd/"
     }
+    
 ]
