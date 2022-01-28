@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:bbpi_college/screen/technology_details_view.dart';
 import 'package:flutter/material.dart';
 import '../models/technology_model.dart';
@@ -21,18 +23,22 @@ class TechnologyView extends StatelessWidget {
               itemCount: technology.length,
               itemBuilder: (context, index) {
                 Technologmodel technologmodel = technology.elementAt(index);
-                return Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => TechnologyDetailsView(
-                                  technologmodel: technologmodel),
-                            ));
-                      },
-                      child: Text('${technology.elementAt(index).computer}')),
+                return Container(
+                  height: 100.0,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => TechnologyDetailsView(
+                                    technologmodel: technologmodel),
+                              ));
+                        },
+                        child: Text('${technology.elementAt(index).computer}',style: TextStyle(fontSize: 20.0,)),
+                  ),
+                ),
                 );
               });
         },

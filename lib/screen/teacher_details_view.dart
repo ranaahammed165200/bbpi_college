@@ -11,7 +11,7 @@ class TeacherDetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Teacher'),
+        title: Text('TEACHER'),
       ),
       body: ListView.builder(
         itemCount:

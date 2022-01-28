@@ -11,4 +11,5 @@ class Appconstant {
   static const jobcellveiw = '/Jobcellveiw';
   static const WebLinkView = '/Weblinkview';
   static const teacher_view = '/Teacherview';
+  static const focal_view='focalview';
 }

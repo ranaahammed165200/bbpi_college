@@ -9,7 +9,7 @@ class TeacherView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Teacher'),
+        title: Text('TEACHER & STAFFS LIST'),
       ),
       body: FutureBuilder(
         future: TeacherRepo.getTeacher(),
@@ -20,15 +20,21 @@ class TeacherView extends StatelessWidget {
               itemCount: teacher.length,
               itemBuilder: (context, index) {
                 Teacher teacherinfo = teacher.elementAt(index);
-                return ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  TeacherDetailsView(teacher: teacherinfo)));
-                    },
-                    child: Text('${teacher.elementAt(index).department}'));
+                return Container(
+                  height: 100.0,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      TeacherDetailsView(teacher: teacherinfo)));
+                        },
+                        child: Text('${teacher.elementAt(index).department}')),
+                  ),
+                );
               });
         },
       ),

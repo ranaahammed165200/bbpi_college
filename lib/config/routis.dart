@@ -3,6 +3,7 @@ import 'dart:js';
 import 'package:bbpi_college/config/app_constant.dart';
 import 'package:bbpi_college/models/about.dart';
 import 'package:bbpi_college/screen/administration_view.dart';
+import 'package:bbpi_college/screen/focalveiw.dart';
 import 'package:bbpi_college/screen/gallry_view.dart';
 import 'package:bbpi_college/screen/homepage.dart';
 import 'package:bbpi_college/screen/jobcellveiw.dart';
@@ -25,5 +26,6 @@ class Approutes {
     Appconstant.jobcellveiw: (context) => JobcellVeiw(),
     Appconstant.WebLinkView: (context) => WebLinkView(),
     Appconstant.teacher_view: (context) => TeacherView(),
+    Appconstant.focal_view:(context)=>FocalVeiw(),
   };
 }

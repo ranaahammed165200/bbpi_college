@@ -31,7 +31,7 @@ class MujibView extends StatelessWidget {
                     Image.asset('${mujibModel.img}'),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text('${mujibModel.mujibTital}'),
+                      child: Text('${mujibModel.mujibTital}',style:TextStyle(color: Colors.red,fontSize:20.0),),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),

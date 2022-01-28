@@ -10,12 +10,12 @@ class AboutUs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About Us'),
+        title: Text('FOCAL POINT'),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Text('1.Introduction'),
+            Text('1.Introduction',style: TextStyle(color: Colors.red,fontSize: 20.0)),
             SizedBox(
               height: 10,
             ),
@@ -24,7 +24,7 @@ class AboutUs extends StatelessWidget {
               child: Text(
                   "Brahmanbaria Polytechnic Institute is one of the most famous among all polytechnic institutes in Bangladesh. It was started in 2005 with only 48 students in the first semester of Diploma-in-Engineering of Refrigeration and Air Conditioning Technology. Since then the institute is being ever expanded by different emergent technologies. The institute is now offering courses in 4(four) technologies with the expectation of opening more Technologies for future."),
             ),
-            Text('2.Location'),
+            Text('2.Location',style: TextStyle(color: Colors.red,fontSize: 20.0)),
             SizedBox(
               height: 10.0,
             ),
@@ -33,7 +33,7 @@ class AboutUs extends StatelessWidget {
               child: Text(
                   'Brahmanbaria Polytechnic Institute is situated in the village Islampur, 30 kilometers northern side from Brahmanbaria town. It is located to the west side adjacent to Dhaka Sylhet High way and middle point from Dhaka to Sylhet. East of it is the Village Islampur; its North side is Conquest Beverage Ltd. and South side is Kazi Shafiqul Islam University college. Different green trees have created a calm, quiet and serene environment in the institute premises.'),
             ),
-            Text('3.Operation'),
+            Text('3.Operation',style: TextStyle(color: Colors.red,fontSize: 20.0)),
             SizedBox(
               height: 10.0,
             ),
@@ -42,7 +42,7 @@ class AboutUs extends StatelessWidget {
               child: Text(
                   'Brahmanbaria Polytechnic Institute is governed by the Ministry of Education of the government of the Peoples Republic of Bangladesh acting through the Directorate of Technical Education. The service of all the employees of this institute is conducted by Directorate of Technical Education. Viz. appointment, promotion, transfer, retirement. The academic programs are run by Bangladesh Technical Education Board (BTEB), Agargoan, Sher-E-Banglanagar, Dhaka-1207. Syllabus, Academic Calendar, Examination and final certificate of the learners are offered by BTEB.'),
             ),
-            Text('4.Financial Activities'),
+            Text('4.Financial Activities',style: TextStyle(color: Colors.red,fontSize: 20.0)),
             SizedBox(
               height: 10.0,
             ),
@@ -54,7 +54,7 @@ class AboutUs extends StatelessWidget {
             SizedBox(
               height: 10.0,
             ),
-            Text('5.Programs'),
+            Text('5.Programs',style: TextStyle(color: Colors.red,fontSize: 20.0),),
             SizedBox(
               height: 10.0,
             ),
@@ -63,7 +63,7 @@ class AboutUs extends StatelessWidget {
             SizedBox(
               height: 10.0,
             ),
-            Text('8.Residential Accommodation'),
+            Text('8.Residential Accommodation',style: TextStyle(color: Colors.red,fontSize: 20.0)),
             SizedBox(
               height: 10.0,
             ),

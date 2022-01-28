@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
           width: double.maxFinite,
           child: Stack(fit: StackFit.expand, children: [
             ImageFiltered(
-              imageFilter: ImageFilter.blur(sigmaX: 5, sigmaY: 4),
+              imageFilter: ImageFilter.blur( sigmaY:2),
               child: Image.asset(
                 "asset/niloy.jpg",
                 fit: BoxFit.cover,
@@ -49,8 +49,8 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(top: 10, left: 10.0, right: 5.0),
-                    height: 200,
+                    margin: EdgeInsets.only(top: 10.0, left:5, right: 5.0),
+                    height:200,
                     width: double.infinity,
                     decoration: BoxDecoration(
                         image: DecorationImage(
@@ -79,12 +79,12 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'ADMINISTRATION',
+                          name: 'ABOUT US',
                           color: Colors.lightGreen,
-                          image: 'asset/image/administrator.png',
+                          image: 'asset/image/personal.png',
                           onTab: () {
                             Navigator.pushNamed(
-                                context, Appconstant.administration);
+                                context, Appconstant.focal_view);
                           },
                         ),
                       ),
@@ -97,9 +97,9 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'ABOUT US',
+                          name: 'FOCAL POINT',
                           color: Colors.lightGreen,
-                          image: "asset/image/personal.png",
+                          image: "asset/image/focal point.jpg",
                           onTab: () {
                             Navigator.pushNamed(context, Appconstant.aboutus);
                           },
@@ -168,10 +168,12 @@ class HomePage extends StatelessWidget {
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'FOCAL POINT',
+                          name: 'ADMINISTRATION',
                           color: Colors.lightGreen,
-                          image: 'asset/image/focal point.jpg',
-                          onTab: () {},
+                          image: 'asset/image/administrator.png',
+                          onTab: () {
+                            Navigator.pushNamed(context, Appconstant.administration);
+                          },
                         ),
                       ),
                     ],
