@@ -188,7 +188,9 @@ class HomePage extends StatelessWidget {
                           name: 'INNOVATION CORNER',
                           color: Colors.lightGreen,
                           image: 'asset/image/innovation.png',
-                          onTab: () {},
+                          onTab: () {
+                            Navigator.pushNamed(context, Appconstant.innovationveiw);
+                          },
                         ),
                       ),
                       Expanded(
