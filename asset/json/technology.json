@@ -23,7 +23,7 @@
     },
     {
         "id": 4,
-        "img":"asset/image/RAT.png..",
+        "img":"asset/image/RAT.png",
         "computer": "Refrigeration & Air-conditioning Technology",
         "departmentinfo": "Refrigeration is the science of moving heat from low temperature to high temperature. In addition to chilling and freezing applications, refrigeration technology is applied in air conditioning and heat pumps. ... If a change of enthalpy can be sensed as a change of temperature, it is called sensible heat.",
         "lab": ""

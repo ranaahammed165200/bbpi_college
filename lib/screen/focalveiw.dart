@@ -1,4 +1,3 @@
-
 import 'dart:ui';
 
 import 'package:bbpi_college/models/focalmodel.dart';
@@ -15,42 +14,45 @@ class FocalVeiw extends StatelessWidget {
         title: Text('ABOUT US'),
       ),
       body: FutureBuilder(
-        future:FocalRepo .getTechnology(),
+        future: FocalRepo.getTechnology(),
         builder: (context, snapshot) {
-          final List<FocalModel> admList =
-              snapshot.data as List<FocalModel>;
+          final List<FocalModel> admList = snapshot.data as List<FocalModel>;
           return ListView.builder(
-            itemCount: admList.length,
-            itemBuilder: (context, index) {
-              
-              return Column(
-                   mainAxisAlignment: MainAxisAlignment.center,
-
-                children: [
+              itemCount: admList.length,
+              itemBuilder: (context, index) {
+                return Column(
+                  children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text('${admList.elementAt(index).message}',style: TextStyle(color:Colors.red,fontSize:20.0),),
-                      
+                      child: Text(
+                        '${admList.elementAt(index).message}',
+                        style: TextStyle(color: Colors.red, fontSize: 20.0),
+                      ),
                     ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.asset('${admList.elementAt(index).img}'),
-                  ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Image.asset('${admList.elementAt(index).img}'),
+                    ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text('${admList.elementAt(index).readMore}'),
                     ),
-                  
-            
-                
-                  Center(child: SizedBox(child: Text('${admList.elementAt(index).principalDetails}'))),
-                  
-                  
-                ],
-              );
-          
-      
-             } );
+                    Container(
+                      width: double.infinity,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                                '${admList.elementAt(index).principalDetails}'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                );
+              });
         },
       ),
     );

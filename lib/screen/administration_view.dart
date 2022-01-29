@@ -21,9 +21,18 @@ class AdministrationView extends StatelessWidget {
             itemBuilder: (context, index) {
               return Column(
                 children: [
-                  Image.asset('${admList.elementAt(index).img}'),
-                  Text('${admList.elementAt(index).name}'),
-                  Text('${admList.elementAt(index).education}'),
+                  Container(
+                      height: 200.0,
+                      width: 200.0,
+                      child: Image.asset('${admList.elementAt(index).img}')),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text('${admList.elementAt(index).name}'),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text('${admList.elementAt(index).education}'),
+                  ),
                 ],
               );
             },

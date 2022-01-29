@@ -1,6 +1,3 @@
-import 'dart:html';
-import 'dart:ui';
-
 import 'package:bbpi_college/models/mujib_model.dart';
 import 'package:flutter/material.dart';
 
@@ -31,11 +28,27 @@ class MujibView extends StatelessWidget {
                     Image.asset('${mujibModel.img}'),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text('${mujibModel.mujibTital}',style:TextStyle(color: Colors.red,fontSize:20.0),),
+                      child: Container(
+                        width: 380.0,
+                        height: 30.0,
+                        child: Center(
+                          child: Text(
+                            '${mujibModel.mujibTital}',
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 20.0),
+                          ),
+                        ),
+                        decoration: BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.circular(20)),
+                      ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text('${mujibModel.mujibDefinition}'),
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        '${mujibModel.mujibDefinition}',
+                        style: TextStyle(fontSize: 15),
+                      ),
                     ),
                   ],
                 );

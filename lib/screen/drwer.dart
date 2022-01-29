@@ -1,8 +1,17 @@
 import 'package:bbpi_college/config/app_constant.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DrawerMy extends StatelessWidget {
   const DrawerMy({Key? key}) : super(key: key);
+
+  void _launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'could not launch $url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +26,16 @@ class DrawerMy extends StatelessWidget {
                 'Brahmanbaria Polytechnic institute',
                 style: TextStyle(color: Colors.red.shade900),
               ),
-              accountEmail: Text("bbariapoly@yahoo.com",
-                  style: TextStyle(color: Colors.red.shade900),),
+              accountEmail: TextButton(
+                child: Text(
+                  "bbariapoly@yahoo.com",
+                  style: TextStyle(color: Colors.red.shade900),
+                ),
+                onPressed: () {
+                  print("object");
+                  _launchURL("mailto:bbariapoly@yahoo.com");
+                },
+              ),
               currentAccountPicture: CircleAvatar(
                 child: ClipOval(
                   child: Image.asset(
@@ -46,7 +63,7 @@ class DrawerMy extends StatelessWidget {
             leading: Icon(Icons.account_box_outlined),
             title: Text('About us'),
             onTap: () {
-              Navigator.pushNamed(context,Appconstant.focal_view );
+              Navigator.pushNamed(context, Appconstant.focal_view);
             },
           ),
           ListTile(
@@ -59,8 +76,6 @@ class DrawerMy extends StatelessWidget {
           Divider(
             color: Colors.green,
           ),
-         
-         
           ListTile(
             leading: Icon(Icons.history),
             title: Text('History'),
@@ -73,35 +88,32 @@ class DrawerMy extends StatelessWidget {
             title: Text('Dowonloads'),
             onTap: () {},
           ),
-           Divider(
+          Divider(
             color: Colors.green,
           ),
-         
           ListTile(
             leading: Icon(Icons.desktop_windows),
             trailing: Icon(Icons.panorama_wide_angle_rounded),
             title: Text('Desktop site'),
             onTap: () {},
-            
           ),
-           Divider(
+          Divider(
             color: Colors.green,
           ),
-         
           ListTile(
             leading: Icon(Icons.settings),
             title: Text('Settings'),
             onTap: () {},
           ),
-         
-           ListTile(
-            leading: Icon(Icons.developer_board,),
+          ListTile(
+            leading: Icon(
+              Icons.developer_board,
+            ),
             title: Text('Devoloper Information'),
             onTap: () {
               Navigator.pushNamed(context, Appconstant.devoloperview);
             },
           ),
-         
         ],
       ),
     );

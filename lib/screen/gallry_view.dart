@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:bbpi_college/models/gallary_model.dart';
 import 'package:bbpi_college/repositories/gallary_repo.dart';
 import 'package:flutter/material.dart';
@@ -21,10 +19,10 @@ class GallaryView extends StatelessWidget {
           return ListView.builder(
             itemCount: admList.length,
             itemBuilder: (context, index) {
-              return Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.asset('${admList.elementAt(index).img}'),
-              );
+              return Container(
+                  height: 300.0,
+                  width: 300.0,
+                  child: Image.asset('${admList.elementAt(index).img}'));
             },
           );
         },

@@ -10,13 +10,13 @@ class WebLinkView extends StatefulWidget {
 
 class _WebLinkViewState extends State<WebLinkView> {
   final String _url = 'http://www.bbpi.gov.bd/';
-  
+
   List<WebModel> webModel = [];
-  void _launchURL() async {
-    if (await canLaunch(_url)) {
-      await launch(_url);
+  void _launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
     } else {
-      throw 'could not launch $_url';
+      throw 'could not launch $url';
     }
   }
 
@@ -39,18 +39,21 @@ class _WebLinkViewState extends State<WebLinkView> {
       body: ListView.builder(
         itemCount: webModel.length,
         itemBuilder: (context, index) {
-          SizedBox(height: 10.0,);
+          SizedBox(
+            height: 10.0,
+          );
           //print(webModel.length);
-          return ElevatedButton(
+          return Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton(
               onPressed: () {
-                _launchURL();
+                _launchURL('${webModel.elementAt(index).webUrl}');
               },
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                
-                child: Text('${webModel.elementAt(index).name}')),
-              );
-               
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('${webModel.elementAt(index).name}')),
+            ),
+          );
         },
       ),
     );

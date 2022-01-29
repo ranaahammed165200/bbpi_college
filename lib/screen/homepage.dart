@@ -8,7 +8,6 @@ class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   get image => null;
-
   get asset => null;
 
   @override
@@ -16,17 +15,16 @@ class HomePage extends StatelessWidget {
     var administrator;
     return Scaffold(
         drawer: DrawerMy(),
-        backgroundColor: Colors.grey.shade400,
         appBar: AppBar(
-          
-          actions: [Image.asset('asset/image/bbpi_banner.jpg')]),
-       
+          centerTitle: true,
+          title: Image.asset('asset/image/bbpi_banner.jpg'),
+        ),
         body: SizedBox(
           height: MediaQuery.of(context).size.height,
           width: double.maxFinite,
           child: Stack(fit: StackFit.expand, children: [
             ImageFiltered(
-              imageFilter: ImageFilter.blur( sigmaY:2),
+              imageFilter: ImageFilter.blur(sigmaY: 2),
               child: Image.asset(
                 "asset/niloy.jpg",
                 fit: BoxFit.cover,
@@ -38,8 +36,8 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(top: 10.0, left:5, right: 5.0),
-                    height:200,
+                    margin: EdgeInsets.only(top: 10.0, left: 5, right: 5.0),
+                    height: 200,
                     width: double.infinity,
                     decoration: BoxDecoration(
                         image: DecorationImage(
@@ -161,13 +159,13 @@ class HomePage extends StatelessWidget {
                           color: Colors.lightGreen,
                           image: 'asset/image/administrator.png',
                           onTab: () {
-                            Navigator.pushNamed(context, Appconstant.administration);
+                            Navigator.pushNamed(
+                                context, Appconstant.administration);
                           },
                         ),
                       ),
                     ],
                   ),
-                 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -179,18 +177,37 @@ class HomePage extends StatelessWidget {
                           color: Colors.lightGreen,
                           image: 'asset/image/contact.png',
                           onTab: () {
-                            Navigator.pushNamed(context,  Appconstant.contactus);
+                            Navigator.pushNamed(context, Appconstant.contactus);
                           },
                         ),
                       ),
-                        Expanded(
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'IMPORTANT LINK',
+                          color: Colors.lightGreen,
+                          image: 'asset/image/world-wide-web.png',
+                          onTab: () {
+                            Navigator.pushNamed(
+                                context, Appconstant.WebLinkView);
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
                         child: _customButton(
                           context: context,
                           name: 'DEVOLOPERS',
                           color: Colors.lightGreen,
                           image: 'asset/image/coding.png',
                           onTab: () {
-                            Navigator.pushNamed(context,Appconstant.devoloperview );
+                            Navigator.pushNamed(
+                                context, Appconstant.devoloperview);
                           },
                         ),
                       )

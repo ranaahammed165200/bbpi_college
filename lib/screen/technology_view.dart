@@ -28,17 +28,23 @@ class TechnologyView extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => TechnologyDetailsView(
-                                    technologmodel: technologmodel),
-                              ));
-                        },
-                        child: Text('${technology.elementAt(index).computer}',style: TextStyle(fontSize: 20.0,)),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => TechnologyDetailsView(
+                                  technologmodel: technologmodel),
+                            ));
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text('${technology.elementAt(index).computer}',
+                            style: TextStyle(
+                              fontSize: 15.0,
+                            )),
+                      ),
+                    ),
                   ),
-                ),
                 );
               });
         },

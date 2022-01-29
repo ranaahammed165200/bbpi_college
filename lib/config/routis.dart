@@ -1,4 +1,4 @@
-import 'dart:js';
+
 
 import 'package:bbpi_college/config/app_constant.dart';
 import 'package:bbpi_college/models/about.dart';

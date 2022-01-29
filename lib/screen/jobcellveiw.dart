@@ -25,11 +25,26 @@ class JobcellVeiw extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text('${admList.elementAt(index).position}',style:TextStyle(color: Colors.red,fontSize: 20.0),),
+                    child: Container(
+                      width: 380.0,
+                      height: 50.0,
+                      child: Center(
+                        child: Text(
+                          '${admList.elementAt(index).position}',
+                          style: TextStyle(color: Colors.white, fontSize: 15.0),
+                        ),
+                      ),
+                      decoration: BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.circular(20)),
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text('${admList.elementAt(index).contact}'),
+                    child: Text(
+                      '${admList.elementAt(index).contact}',
+                      style: TextStyle(fontSize: 15.0),
+                    ),
                   ),
                 ],
               );
