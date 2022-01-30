@@ -26,7 +26,7 @@ class FocalVeiw extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         '${admList.elementAt(index).message}',
-                        style: TextStyle(color: Colors.red, fontSize: 20.0),
+                        style: TextStyle(color: Colors.red, fontSize: 25.0),
                       ),
                     ),
                     Padding(
@@ -34,8 +34,11 @@ class FocalVeiw extends StatelessWidget {
                       child: Image.asset('${admList.elementAt(index).img}'),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text('${admList.elementAt(index).readMore}'),
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        '${admList.elementAt(index).readMore}',
+                        style: TextStyle(fontSize: 20.0),
+                      ),
                     ),
                     Container(
                       width: double.infinity,
@@ -45,7 +48,9 @@ class FocalVeiw extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
-                                '${admList.elementAt(index).principalDetails}'),
+                              '${admList.elementAt(index).principalDetails}',
+                              style: TextStyle(fontSize: 20.0),
+                            ),
                           ),
                         ],
                       ),

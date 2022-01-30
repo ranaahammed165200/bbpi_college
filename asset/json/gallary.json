@@ -9,7 +9,7 @@
     },
     {
         "id":1,
-        "img":"asset/image/robortpic.jpg"
+        "img":"asset/image/robar.jpg"
     },
     {
         "id":1,
@@ -17,7 +17,7 @@
     },
     {
         "id":1,
-        "img":"asset/image/audt.jpg"
+        "img":"asset/image/somabes.jpg"
     },
     {
         "id":1,
@@ -25,6 +25,6 @@
     },
     {
         "id":1,
-        "img":"asset/image/classroom.jpg"
+        "img":"asset/image/minar.jpg"
     }
 ]

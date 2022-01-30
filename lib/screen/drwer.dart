@@ -80,7 +80,7 @@ class DrawerMy extends StatelessWidget {
             leading: Icon(Icons.history),
             title: Text('History'),
             onTap: () {
-              Navigator.pushNamed(context, Appconstant.aboutus);
+              Navigator.pushNamed(context, Appconstant.historyview);
             },
           ),
           ListTile(

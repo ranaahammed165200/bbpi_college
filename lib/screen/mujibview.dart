@@ -39,7 +39,7 @@ class MujibView extends StatelessWidget {
                           ),
                         ),
                         decoration: BoxDecoration(
-                            color: Colors.green,
+                            color: Colors.lightGreen,
                             borderRadius: BorderRadius.circular(20)),
                       ),
                     ),
@@ -47,7 +47,7 @@ class MujibView extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: Text(
                         '${mujibModel.mujibDefinition}',
-                        style: TextStyle(fontSize: 15),
+                        style: TextStyle(fontSize: 20.0),
                       ),
                     ),
                   ],

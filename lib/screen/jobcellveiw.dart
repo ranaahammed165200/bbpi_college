@@ -35,7 +35,7 @@ class JobcellVeiw extends StatelessWidget {
                         ),
                       ),
                       decoration: BoxDecoration(
-                          color: Colors.green,
+                          color: Colors.lightGreen,
                           borderRadius: BorderRadius.circular(20)),
                     ),
                   ),

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'bbpi',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.lightGreen,
       ),
 
       // home:SigninPage() ,

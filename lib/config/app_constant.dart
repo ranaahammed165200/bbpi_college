@@ -12,11 +12,11 @@ class Appconstant {
   static const jobcellveiw = '/Jobcellveiw';
   static const WebLinkView = '/Weblinkview';
   static const teacher_view = '/Teacherview';
-  static const focal_view='/focalview';
-  static const Innovation='/innovation';
-  static const innovationrobort='/innovationro';
-  static const innovationveiw='/innovationveiw';
-  static const contactus='/contactveiw';
-  static const devoloperview='/devoloperView';
-
+  static const focal_view = '/focalview';
+  static const Innovation = '/innovation';
+  static const innovationrobort = '/innovationro';
+  static const innovationveiw = '/innovationveiw';
+  static const contactus = '/contactveiw';
+  static const devoloperview = '/devoloperView';
+  static const historyview = '/HistoryView';
 }

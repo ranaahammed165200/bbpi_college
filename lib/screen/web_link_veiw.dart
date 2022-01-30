@@ -50,8 +50,15 @@ class _WebLinkViewState extends State<WebLinkView> {
                 _launchURL('${webModel.elementAt(index).webUrl}');
               },
               child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text('${webModel.elementAt(index).name}')),
+                padding: const EdgeInsets.only(top: 30),
+                child: Container(
+                  height: 50,
+                  child: Text(
+                    '${webModel.elementAt(index).name}',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
             ),
           );
         },

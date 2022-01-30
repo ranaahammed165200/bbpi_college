@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:bbpi_college/screen/technology_details_view.dart';
 import 'package:flutter/material.dart';
 import '../models/technology_model.dart';
@@ -40,6 +38,7 @@ class TechnologyView extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: Text('${technology.elementAt(index).computer}',
                             style: TextStyle(
+                              color: Colors.white,
                               fontSize: 15.0,
                             )),
                       ),

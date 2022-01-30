@@ -29,10 +29,13 @@ class TeacherView extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) =>
-                                      TeacherDetailsView(teacher: teacherinfo)));
+                                  builder: (context) => TeacherDetailsView(
+                                      teacher: teacherinfo)));
                         },
-                        child: Text('${teacher.elementAt(index).department}')),
+                        child: Text(
+                          '${teacher.elementAt(index).department}',
+                          style: TextStyle(color: Colors.white),
+                        )),
                   ),
                 );
               });

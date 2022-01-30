@@ -16,8 +16,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         drawer: DrawerMy(),
         appBar: AppBar(
-          centerTitle: true,
-          title: Image.asset('asset/image/bbpi_banner.jpg'),
+          title: Image.asset('asset/image/banner.png'),
         ),
         body: SizedBox(
           height: MediaQuery.of(context).size.height,
