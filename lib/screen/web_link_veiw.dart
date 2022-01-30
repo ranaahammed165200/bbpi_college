@@ -1,3 +1,4 @@
+import 'package:bbpi_college/config/helper.dart';
 import 'package:bbpi_college/models/web_link.dart';
 import 'package:bbpi_college/repositories/web_repo.dart';
 import 'package:flutter/material.dart';
@@ -46,8 +47,16 @@ class _WebLinkViewState extends State<WebLinkView> {
           return Padding(
             padding: const EdgeInsets.all(8.0),
             child: ElevatedButton(
-              onPressed: () {
-                _launchURL('${webModel.elementAt(index).webUrl}');
+              onPressed: () async {
+                print('Ekhane asi');
+                if (await initConnectivity()) {
+                  _launchURL('${webModel.elementAt(index).webUrl}');
+                } else {
+                  final snackBar = SnackBar(
+                    content: const Text('Plz connection Net!'),
+                  );
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                }
               },
               child: Padding(
                 padding: const EdgeInsets.only(top: 30),
