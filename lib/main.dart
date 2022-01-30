@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'bbpi',
       theme: ThemeData(
+        appBarTheme: AppBarTheme(foregroundColor: Colors.white),
         primarySwatch: Colors.lightGreen,
       ),
 

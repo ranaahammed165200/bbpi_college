@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:bbpi_college/config/app_constant.dart';
+import 'package:bbpi_college/constant/exitpopup.dart';
 import 'package:bbpi_college/screen/drwer.dart';
 import 'package:flutter/material.dart';
 
@@ -13,210 +14,216 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var administrator;
-    return Scaffold(
-        drawer: DrawerMy(),
-        appBar: AppBar(
-          title: Image.asset('asset/image/banner.png'),
-        ),
-        body: SizedBox(
-          height: MediaQuery.of(context).size.height,
-          width: double.maxFinite,
-          child: Stack(fit: StackFit.expand, children: [
-            ImageFiltered(
-              imageFilter: ImageFilter.blur(sigmaY: 2),
-              child: Image.asset(
-                "asset/niloy.jpg",
-                fit: BoxFit.cover,
+    return WillPopScope(
+      onWillPop: () => showExitPopup(context),
+      child: Scaffold(
+          drawer: DrawerMy(),
+          appBar: AppBar(
+            centerTitle: true,
+            title: Image.asset('asset/image/banner.png'),
+          ),
+          body: SizedBox(
+            height: MediaQuery.of(context).size.height,
+            width: double.maxFinite,
+            child: Stack(fit: StackFit.expand, children: [
+              ImageFiltered(
+                imageFilter: ImageFilter.blur(sigmaY: 2),
+                child: Image.asset(
+                  "asset/niloy.jpg",
+                  fit: BoxFit.cover,
+                ),
               ),
-            ),
-            SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(top: 10.0, left: 5, right: 5.0),
-                    height: 200,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: AssetImage('asset/image/polytechnic.jpg'))),
-                  ),
-                  SizedBox(
-                    height: 10.0,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'MUJIB CORNER',
-                          color: Colors.lightGreen,
-                          image: "asset/image/mujib.jpg",
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.mujib_view);
-                          },
+              SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(top: 10.0, left: 5, right: 5.0),
+                      height: 200,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image:
+                                  AssetImage('asset/image/polytechnic.jpg'))),
+                    ),
+                    SizedBox(
+                      height: 10.0,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'MUJIB CORNER',
+                            color: Colors.lightGreen,
+                            image: "asset/image/mujib.jpg",
+                            onTab: () {
+                              Navigator.pushNamed(
+                                  context, Appconstant.mujib_view);
+                            },
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'ABOUT US',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/personal.png',
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.focal_view);
-                          },
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'ABOUT US',
+                            color: Colors.lightGreen,
+                            image: 'asset/image/personal.png',
+                            onTab: () {
+                              Navigator.pushNamed(
+                                  context, Appconstant.focal_view);
+                            },
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'FOCAL POINT',
-                          color: Colors.lightGreen,
-                          image: "asset/image/focal point.jpg",
-                          onTab: () {
-                            Navigator.pushNamed(context, Appconstant.aboutus);
-                          },
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'FOCAL POINT',
+                            color: Colors.lightGreen,
+                            image: "asset/image/focal point.jpg",
+                            onTab: () {
+                              Navigator.pushNamed(context, Appconstant.aboutus);
+                            },
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'TECHNOLOGY',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/department.png',
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.technology_view);
-                          },
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'TECHNOLOGY',
+                            color: Colors.lightGreen,
+                            image: 'asset/image/department.png',
+                            onTab: () {
+                              Navigator.pushNamed(
+                                  context, Appconstant.technology_view);
+                            },
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'GALLARY',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/gallery.png',
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.gallarryveiw);
-                          },
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'GALLARY',
+                            color: Colors.lightGreen,
+                            image: 'asset/image/gallery.png',
+                            onTab: () {
+                              Navigator.pushNamed(
+                                  context, Appconstant.gallarryveiw);
+                            },
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'TEACHER & STAFFS',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/teamwork.png',
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.teacher_view);
-                          },
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'TEACHER & STAFFS',
+                            color: Colors.lightGreen,
+                            image: 'asset/image/teamwork.png',
+                            onTab: () {
+                              Navigator.pushNamed(
+                                  context, Appconstant.teacher_view);
+                            },
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'JOB CELL',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/receptionist.png',
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.jobcellveiw);
-                          },
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'JOB CELL',
+                            color: Colors.lightGreen,
+                            image: 'asset/image/receptionist.png',
+                            onTab: () {
+                              Navigator.pushNamed(
+                                  context, Appconstant.jobcellveiw);
+                            },
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'ADMINISTRATION',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/administrator.png',
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.administration);
-                          },
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'ADMINISTRATION',
+                            color: Colors.lightGreen,
+                            image: 'asset/image/administrator.png',
+                            onTab: () {
+                              Navigator.pushNamed(
+                                  context, Appconstant.administration);
+                            },
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'CONTACT US',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/contact.png',
-                          onTab: () {
-                            Navigator.pushNamed(context, Appconstant.contactus);
-                          },
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'CONTACT US',
+                            color: Colors.lightGreen,
+                            image: 'asset/image/contact.png',
+                            onTab: () {
+                              Navigator.pushNamed(
+                                  context, Appconstant.contactus);
+                            },
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'IMPORTANT LINK',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/world-wide-web.png',
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.WebLinkView);
-                          },
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'IMPORTANT LINK',
+                            color: Colors.lightGreen,
+                            image: 'asset/image/world-wide-web.png',
+                            onTab: () {
+                              Navigator.pushNamed(
+                                  context, Appconstant.WebLinkView);
+                            },
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'DEVOLOPERS',
-                          color: Colors.lightGreen,
-                          image: 'asset/image/coding.png',
-                          onTab: () {
-                            Navigator.pushNamed(
-                                context, Appconstant.devoloperview);
-                          },
-                        ),
-                      )
-                    ],
-                  ),
-                ],
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: _customButton(
+                            context: context,
+                            name: 'DEVOLOPERS',
+                            color: Colors.lightGreen,
+                            image: 'asset/image/coding.png',
+                            onTab: () {
+                              Navigator.pushNamed(
+                                  context, Appconstant.devoloperview);
+                            },
+                          ),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ]),
-        ));
+            ]),
+          )),
+    );
   }
 
   Widget _customButton({

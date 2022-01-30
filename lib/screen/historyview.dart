@@ -27,9 +27,13 @@ class HistoryView extends StatelessWidget {
                       width: 380,
                       height: 50,
                       child: Center(
-                        child: Text(
-                          '${admList.elementAt(index).history}',
-                          style: TextStyle(color: Colors.white, fontSize: 30.0),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            '${admList.elementAt(index).history}',
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 30.0),
+                          ),
                         ),
                       ),
                       decoration: BoxDecoration(
@@ -37,8 +41,11 @@ class HistoryView extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20)),
                     ),
                   ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(10.0),
                     child: Text(
                       '${admList.elementAt(index).main}',
                       style: TextStyle(fontSize: 20.0),

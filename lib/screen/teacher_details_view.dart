@@ -24,10 +24,14 @@ class TeacherDetailsView extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                    height: 100.0,
-                    width: 150.0,
+                    height: 400.0,
+                    width: 250.0,
                     child: Image.asset('${teacherinfo.img}')),
-                Center(child: Text('${teacherinfo.name}')),
+                Center(
+                    child: Text(
+                  '${teacherinfo.name}',
+                  style: TextStyle(fontSize: 25),
+                )),
                 Center(
                     child: Text(
                   '${teacherinfo.position}',

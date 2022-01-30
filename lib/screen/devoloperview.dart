@@ -1,5 +1,3 @@
-
-
 import 'package:bbpi_college/models/devoloper_model.dart';
 import 'package:bbpi_college/repositories/devoloper_repo.dart';
 import 'package:flutter/material.dart';
@@ -31,30 +29,98 @@ class Devoloperview extends StatelessWidget {
             itemBuilder: (context, index) {
               return Column(
                 children: [
-                  Container(
-                      width: 500.0,
-                      height: 200.0,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset('${admList.elementAt(index).img}'),
-                      )),
-                  Text(
-                    '${admList.elementAt(index).name}',
-                    style: TextStyle(
-                      color: Colors.red,
-                      fontSize: 20.0,
-                    ),
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Container(
+                        child: Image.asset('${admList.elementAt(index).img}')),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      '${admList.elementAt(index).proffesion}',
+                      '${admList.elementAt(index).name}',
                       style: TextStyle(
                         color: Colors.red,
-                        fontSize: 15.0,
+                        fontSize: 20.0,
                       ),
                     ),
                   ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: SingleChildScrollView(
+                          child: Text(
+                            '${admList.elementAt(index).proffesion}',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 18.0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            '${admList.elementAt(index).mobileNumber}',
+                            style: TextStyle(fontSize: 18.0),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            "${admList.elementAt(index).facebook}",
+                            style: TextStyle(fontSize: 18.0),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            '${admList.elementAt(index).whattSUp}',
+                            style: TextStyle(fontSize: 18.0),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          '${admList.elementAt(index).email}',
+                          style: TextStyle(fontSize: 18.0),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  )
                 ],
               );
             },

@@ -1,10 +1,17 @@
-
 import 'package:bbpi_college/models/contact.dart';
 import 'package:bbpi_college/repositories/contact_repo.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactView extends StatelessWidget {
   const ContactView({Key? key}) : super(key: key);
+  void _launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'could not launch $url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,25 +31,6 @@ class ContactView extends StatelessWidget {
                 children: [
                   SizedBox(
                     height: 10,
-                  ),
-                  Container(
-                    width: 380,
-                    height: 50,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Center(
-                        child: Text(
-                          '${admList.elementAt(index).campus}',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20.0,
-                          ),
-                        ),
-                      ),
-                    ),
-                    decoration: BoxDecoration(
-                        color: Colors.blueAccent,
-                        borderRadius: BorderRadius.circular(20)),
                   ),
                   SizedBox(
                     height: 5.0,
@@ -65,7 +53,7 @@ class ContactView extends StatelessWidget {
                       ],
                     ),
                     decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: Colors.lightGreen,
                         borderRadius: BorderRadius.circular(20)),
                   ),
                   SizedBox(
@@ -74,7 +62,19 @@ class ContactView extends StatelessWidget {
                   Text(
                     '${admList.elementAt(index).address}',
                     style: TextStyle(fontSize: 20.0),
-                  )
+                  ),
+                  Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: TextButton(
+                          child: Text(
+                            '${admList.elementAt(index).website}',
+                            style: TextStyle(
+                                color: Colors.red.shade900, fontSize: 20.0),
+                          ),
+                          onPressed: () {
+                            print("object");
+                            _launchURL("http://www.bbpi.gov.bd/");
+                          }))
                 ],
               );
             },

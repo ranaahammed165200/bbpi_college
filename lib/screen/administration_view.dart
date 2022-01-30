@@ -22,12 +22,15 @@ class AdministrationView extends StatelessWidget {
               return Column(
                 children: [
                   Container(
-                      height: 200.0,
+                      height: 300.0,
                       width: 200.0,
                       child: Image.asset('${admList.elementAt(index).img}')),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text('${admList.elementAt(index).name}'),
+                    child: Text(
+                      '${admList.elementAt(index).name}',
+                      style: TextStyle(fontSize: 20.0),
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),

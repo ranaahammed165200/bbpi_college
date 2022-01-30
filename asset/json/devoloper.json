@@ -2,9 +2,13 @@
     {
         "id":1,
         "img":"asset/image/rana_ahammed.jpg",
-        "name":"RANA AHAMMED NILOY",
+        "name":"RANA AHAMMED (NILOY)",
        
-        "proffesion":" App Devoloper \nStudy At Brahmanbaria Polytechnic Institute\nDepartment:Computer Technology\nsemester:6th\nContact Number:01786786277\nFacebook id:Rana Ahammed Niloy\nEmail:ranaahammed165200@gmail.com",
-   "email":"email:ranaahammed165200@gmail.com"
+        "proffesion":"(App Devoloper)\n\nStudent Of Brahmanbaria Polytechnic Institute\n\nDepartment:Computer Technology\nsemester:6th",
+        "email":"Email: ranaahammed165200@gmail.com",
+        "facebook":"Facebook id: Rana Ahammed Niloy",
+        "Mobile Number":"Mobaile Number: 01303807625",
+        "Whatt's up":"WhatsUp: 01786786177"
+   
     }
 ]

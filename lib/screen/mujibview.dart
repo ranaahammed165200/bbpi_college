@@ -25,7 +25,9 @@ class MujibView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('${mujibModel.img}'),
+                    Image.asset(
+                      '${mujibModel.img}',
+                    ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
