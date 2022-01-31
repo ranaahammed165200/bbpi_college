@@ -1,16 +1,33 @@
-# bbpi_college
+## BBPI
 
-A new Flutter project.
+Collection of all Brahmanbaria Polytechnic Institute information.Teacher list,Teacher information,Technology list,Technology Information,Important website Link,job cell,Gallary,contact us,about us,mujib corner,Administration,Focal point etc.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+ - Find Brahmanbaria polytechnic institute all information.
+ - Explorer websites of all education departments education board etc.
+ - Read & download all curricular books from NCTB's website
+ - Websites of all education board are listed here as well as Bangladesh Technical Education  Board(BTEB).
+ - Clean & Modern User Interface
+ - Open your desired website just in one click.
+ - Full Bangla UI & it's easy to use
+ - and a bunch of usefull features
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<img src="asset/image/first.jpg" width="256"> <img src="asset/image/second.jpg" width="256"> <img src="asset/image/third.jpg" width="256"> <img src="asset/image/4th.jpg" width="256"><img src="asset/image/5th.jpg" width="256">
+<!-- ![hello](screenshots/screenshot_1.png)
+![hello](screenshots/screenshot_2.png)
+![hello](screenshots/screenshot_3.png) -->
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Try out ShikkhaDex?
+
+Android: [Download BBPI.apk](https://github.com/afjal-al-sayed/shikkha_dex/raw/master/release/shikkha_dex.apk)
+
+## Developer
+
+Hi there! I am Rana Ahammed Niloy . I create Android apps for solving problems and to make things easier. Try out my new app BBPI. If you have any query related to it don't hasitate to [e-mail me](mailto:ranaahammed165200@gmail.com). And also check out my other stuffs [here](https://github.com/ranaahammed165200/bbpi_college.git)
+
+
+### Note
+ <small>BBPI contains links of external websites inside it. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</small>
