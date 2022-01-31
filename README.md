@@ -15,18 +15,20 @@ Collection of all Brahmanbaria Polytechnic Institute information.Teacher list,Te
 
 ## Screenshots
 
-<img src="asset/image/first.jpg" width="256"> <img src="asset/image/second.jpg" width="256"> <img src="asset/image/third.jpg" width="256"> <img src="asset/image/4th.jpg" width="256"><img src="asset/image/5th.jpg" width="256">
+<img src="asset/image/first.jpg" width="256"> <img src="asset/image/third.jpg" width="256"> <img src="asset/image/4th.jpg" width="256"> <img src="asset/image/5th.jpg" width="256"><img src="asset/image/6th.jpg" width="256"><img src="asset/image/7th.jpg" width="256"><img src="asset/image/8th.jpg" width="256"><img src="asset/image/9th.jpg" width="256"><img src="asset/image/10.jpg" width="256"><img src="asset/image/11.jpg" width="256"><img src="asset/image/12.jpg" width="256">
+<img src="asset/image/13.jpg" width="256">
+<img src="asset/image/14.jpg" width="256">
 <!-- ![hello](screenshots/screenshot_1.png)
 ![hello](screenshots/screenshot_2.png)
 ![hello](screenshots/screenshot_3.png) -->
 
 ## Try out BBPI?
 
-Android: [Download BBPI.apk](https://github.com/afjal-al-sayed/shikkha_dex/raw/master/release/shikkha_dex.apk)
+Android: [Download BBPI.apk]()
 
 ## Developer
 
-Hi there! I am Rana Ahammed Niloy . I create Android apps for solving problems and to make things easier. Try out my new app BBPI. If you have any query related to it don't hasitate to [e-mail me](mailto:ranaahammed165200@gmail.com). And also check out my other stuffs [here](https://github.com/ranaahammed165200/bbpi_college.git)
+Hi there! I am Rana Ahammed Niloy . I create Android apps for solving problems and to make things easier. Try out my new app BBPI. If you have any query related to it don't hasitate to [e-mail me](mailto:ranaahammed165200@gmail.com). And also check out my other stuffs [Clik here](https://github.com/ranaahammed165200/bbpi_college.git)
 
 
 ### Note
