@@ -20,7 +20,7 @@ Collection of all Brahmanbaria Polytechnic Institute information.Teacher list,Te
 ![hello](screenshots/screenshot_2.png)
 ![hello](screenshots/screenshot_3.png) -->
 
-## Try out ShikkhaDex?
+## Try out BBPI?
 
 Android: [Download BBPI.apk](https://github.com/afjal-al-sayed/shikkha_dex/raw/master/release/shikkha_dex.apk)
 
