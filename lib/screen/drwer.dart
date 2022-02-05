@@ -22,14 +22,23 @@ class DrawerMy extends StatelessWidget {
           GestureDetector(
             onTap: () => Navigator.pop(context),
             child: UserAccountsDrawerHeader(
-              accountName: Text(
-                'Brahmanbaria Polytechnic institute',
-                style: TextStyle(color: Colors.red.shade900),
+              
+              accountName: Padding(
+                padding: const EdgeInsets.only(top: 20.0,left: 15.0),
+                child: Text(
+                  'Brahmanbaria Polytechnic institute',
+                  style: TextStyle(color: Colors.red.shade900),
+                ),
               ),
               accountEmail: TextButton(
-                child: Text(
-                  "bbariapoly@yahoo.com",
-                  style: TextStyle(color: Colors.red.shade900),
+                
+                child: Padding(
+                  
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                "Email:bbariapoly@yahoo.com",
+                    style: TextStyle(color: Colors.red.shade900),
+                  ),
                 ),
                 onPressed: () {
                   print("object");

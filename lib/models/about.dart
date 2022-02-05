@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 class AboutUs extends StatelessWidget {
@@ -8,7 +8,7 @@ class AboutUs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('FOCAL POINT'),
+        title: Text('About US'),
       ),
       body: SingleChildScrollView(
         child: Column(

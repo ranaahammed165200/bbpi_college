@@ -21,6 +21,14 @@
     },
     {
         "id":1,
+        "img":"asset/image/brahmanbaria.jpg"
+    },
+    {
+        "id":1,
+        "img":"asset/image/minar.jpg"
+    },
+    {
+        "id":1,
         "img":"asset/image/game.jpg"
     },
     {

@@ -56,56 +56,36 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'MUJIB CORNER',
-                            color: Colors.lightGreen,
-                            image: "asset/image/mujib.jpg",
-                            onTab: () {
-                              Navigator.pushNamed(
-                                  context, Appconstant.mujib_view);
-                            },
-                          ),
+                          
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: _customButton(
+                                context: context,
+                                name: 'MUJIB CORNER',
+                                color: Colors.lightGreen,
+                                image: "asset/image/mujib-removebg-preview.png",
+                                
+                                onTab: () {
+                                  Navigator.pushNamed(
+                                      context, Appconstant.mujib_view);
+                                },
+                              ),
+                            ),
+                          
                         ),
                         Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'ABOUT US',
-                            color: Colors.lightGreen,
-                            image: 'asset/image/personal.png',
-                            onTab: () {
-                              Navigator.pushNamed(
-                                  context, Appconstant.focal_view);
-                            },
-                          ),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'FOCAL POINT',
-                            color: Colors.lightGreen,
-                            image: "asset/image/focal point.jpg",
-                            onTab: () {
-                              Navigator.pushNamed(context, Appconstant.aboutus);
-                            },
-                          ),
-                        ),
-                        Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'TECHNOLOGY',
-                            color: Colors.lightGreen,
-                            image: 'asset/image/department.png',
-                            onTab: () {
-                              Navigator.pushNamed(
-                                  context, Appconstant.technology_view);
-                            },
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'ABOUT US',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/employee.png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context, Appconstant.aboutus);
+                              },
+                            ),
                           ),
                         ),
                       ],
@@ -115,57 +95,32 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'GALLARY',
-                            color: Colors.lightGreen,
-                            image: 'asset/image/gallery.png',
-                            onTab: () {
-                              Navigator.pushNamed(
-                                  context, Appconstant.gallarryveiw);
-                            },
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'BLOOD',
+                              color: Colors.lightGreen,
+                              image: "asset/image/blood.png",
+                              onTab: () {
+                                Navigator.pushNamed(context,  Appconstant.bloodview);
+                              },
+                            ),
                           ),
                         ),
                         Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'TEACHER & STAFFS',
-                            color: Colors.lightGreen,
-                            image: 'asset/image/teamwork.png',
-                            onTab: () {
-                              Navigator.pushNamed(
-                                  context, Appconstant.teacher_view);
-                            },
-                          ),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'JOB CELL',
-                            color: Colors.lightGreen,
-                            image: 'asset/image/receptionist.png',
-                            onTab: () {
-                              Navigator.pushNamed(
-                                  context, Appconstant.jobcellveiw);
-                            },
-                          ),
-                        ),
-                        Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'ADMINISTRATION',
-                            color: Colors.lightGreen,
-                            image: 'asset/image/administrator.png',
-                            onTab: () {
-                              Navigator.pushNamed(
-                                  context, Appconstant.administration);
-                            },
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'TECHNOLOGY',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/technology (1).png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context, Appconstant.technology_view);
+                              },
+                            ),
                           ),
                         ),
                       ],
@@ -175,27 +130,141 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'CONTACT US',
-                            color: Colors.lightGreen,
-                            image: 'asset/image/contact.png',
-                            onTab: () {
-                              Navigator.pushNamed(
-                                  context, Appconstant.contactus);
-                            },
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'GALLARY',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/gallery.png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context, Appconstant.gallarryveiw);
+                              },
+                            ),
                           ),
                         ),
                         Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'IMPORTANT LINK',
-                            color: Colors.lightGreen,
-                            image: 'asset/image/world-wide-web.png',
-                            onTab: () {
-                              Navigator.pushNamed(
-                                  context, Appconstant.WebLinkView);
-                            },
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'TEACHER & STAFFS',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/teamwork.png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context, Appconstant.teacher_view);
+                              },
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'JOB CELL',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/receptionist.png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context, Appconstant.jobcellveiw);
+                              },
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'ADMINISTRATION',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/administrator.png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context, Appconstant.administration);
+                              },
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'STUDENT INFO',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/student.png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context, Appconstant.StudentVeiw);
+                              },
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'PRINCIPAL MESSAGE',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/message.png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context,  Appconstant.focal_view);
+                              },
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'CONTACT US',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/contact.png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context, Appconstant.contactus);
+                              },
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'IMPORTANT LINK',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/world-wide-web.png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context, Appconstant.WebLinkView);
+                              },
+                            ),
                           ),
                         ),
                       ],
@@ -205,15 +274,18 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Expanded(
-                          child: _customButton(
-                            context: context,
-                            name: 'DEVOLOPERS',
-                            color: Colors.lightGreen,
-                            image: 'asset/image/coding.png',
-                            onTab: () {
-                              Navigator.pushNamed(
-                                  context, Appconstant.devoloperview);
-                            },
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: _customButton(
+                              context: context,
+                              name: 'DEVOLOPERS',
+                              color: Colors.lightGreen,
+                              image: 'asset/image/coding.png',
+                              onTab: () {
+                                Navigator.pushNamed(
+                                    context, Appconstant.devoloperview);
+                              },
+                            ),
                           ),
                         )
                       ],

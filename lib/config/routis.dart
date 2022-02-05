@@ -1,22 +1,22 @@
 
 
-
-
 import 'package:bbpi_college/config/app_constant.dart';
 import 'package:bbpi_college/models/about.dart';
 import 'package:bbpi_college/models/innovation_idea_submit.dart';
 import 'package:bbpi_college/models/innovation_robort.dart';
 import 'package:bbpi_college/screen/administration_view.dart';
+import 'package:bbpi_college/screen/blood_view.dart';
 import 'package:bbpi_college/screen/contactview.dart';
 import 'package:bbpi_college/screen/devoloperview.dart';
 
-import 'package:bbpi_college/screen/focalveiw.dart';
+import 'package:bbpi_college/screen/principalview.dart';
 import 'package:bbpi_college/screen/gallry_view.dart';
 import 'package:bbpi_college/screen/historyview.dart';
 import 'package:bbpi_college/screen/homepage.dart';
 import 'package:bbpi_college/screen/innovationveiw.dart';
 import 'package:bbpi_college/screen/jobcellveiw.dart';
 import 'package:bbpi_college/screen/mujibview.dart';
+import 'package:bbpi_college/screen/studentinfo.dart';
 import 'package:bbpi_college/screen/technology_view.dart';
 import 'package:bbpi_college/screen/web_link_veiw.dart';
 import '../screen/teacher_view.dart';
@@ -42,6 +42,8 @@ class Approutes {
     Appconstant.contactus:(context)=>ContactView(),
     Appconstant.devoloperview:(context)=>Devoloperview(),
     Appconstant.historyview:(context)=>HistoryView(),
+    Appconstant.bloodview:(context)=>BloodView(),
+    Appconstant.StudentVeiw:(context)=>StudentVeiw()
   
   };
 }

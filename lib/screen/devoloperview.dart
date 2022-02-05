@@ -50,11 +50,14 @@ class Devoloperview extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: SingleChildScrollView(
-                          child: Text(
-                            '${admList.elementAt(index).proffesion}',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18.0,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              '${admList.elementAt(index).proffesion}',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 17.0,
+                              ),
                             ),
                           ),
                         ),
@@ -111,9 +114,12 @@ class Devoloperview extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          '${admList.elementAt(index).email}',
-                          style: TextStyle(fontSize: 18.0),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            '${admList.elementAt(index).email}',
+                            style: TextStyle(fontSize: 18.0),
+                          ),
                         ),
                       ),
                     ],

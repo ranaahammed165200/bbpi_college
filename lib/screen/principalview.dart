@@ -1,4 +1,4 @@
-import 'dart:ui';
+
 
 import 'package:bbpi_college/models/focalmodel.dart';
 import 'package:bbpi_college/repositories/focal_repo.dart';
@@ -11,7 +11,7 @@ class FocalVeiw extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ABOUT US'),
+        title: Text('PRINCIPAL MESSAGE'),
       ),
       body: FutureBuilder(
         future: FocalRepo.getTechnology(),

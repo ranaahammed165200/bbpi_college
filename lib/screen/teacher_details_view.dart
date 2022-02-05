@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/teacher_model.dart';
-import '../repositories/teacher_repo.dart';
-import '../screen/teacher_view.dart';
+
 
 class TeacherDetailsView extends StatelessWidget {
   const TeacherDetailsView({Key? key, required this.teacher}) : super(key: key);

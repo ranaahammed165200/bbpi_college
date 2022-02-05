@@ -9,6 +9,8 @@ List<Technologmodel> technologmodelFromJson(String str) =>
         json.decode(str).map((x) => Technologmodel.fromJson(x)));
 
 class Technologmodel {
+  static var length;
+
   Technologmodel({
     this.id,
     this.img,

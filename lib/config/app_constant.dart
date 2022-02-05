@@ -1,5 +1,7 @@
 import 'package:bbpi_college/models/innovation_idea_submit.dart';
+import 'package:bbpi_college/screen/blood_view_details.dart';
 import 'package:bbpi_college/screen/mujibview.dart';
+import 'package:bbpi_college/screen/studentinfo.dart';
 import 'package:bbpi_college/screen/web_link_veiw.dart';
 
 class Appconstant {
@@ -19,4 +21,7 @@ class Appconstant {
   static const contactus = '/contactveiw';
   static const devoloperview = '/devoloperView';
   static const historyview = '/HistoryView';
+  static const bloodview='/BloodView';
+  static const BloodDetails='/blooddetails';
+  static const StudentVeiw='/Studentview';
 }
