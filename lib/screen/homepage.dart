@@ -61,9 +61,9 @@ class HomePage extends StatelessWidget {
                               padding: const EdgeInsets.all(8.0),
                               child: _customButton(
                                 context: context,
-                                name: 'MUJIB CORNER',
+                                name: 'Mujib Corner',
                                 color: Colors.lightGreen,
-                                image: "asset/image/mujib-removebg-preview.png",
+                                image: "asset/image/mujib.png",
                                 
                                 onTab: () {
                                   Navigator.pushNamed(
@@ -75,10 +75,10 @@ class HomePage extends StatelessWidget {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(5.0),
                             child: _customButton(
                               context: context,
-                              name: 'ABOUT US',
+                              name: 'About us',
                               color: Colors.lightGreen,
                               image: 'asset/image/employee.png',
                               onTab: () {
@@ -99,7 +99,7 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: _customButton(
                               context: context,
-                              name: 'BLOOD',
+                              name: 'Blood',
                               color: Colors.lightGreen,
                               image: "asset/image/blood.png",
                               onTab: () {
@@ -113,7 +113,7 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: _customButton(
                               context: context,
-                              name: 'TECHNOLOGY',
+                              name: 'Technology',
                               color: Colors.lightGreen,
                               image: 'asset/image/technology (1).png',
                               onTab: () {
@@ -134,7 +134,7 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: _customButton(
                               context: context,
-                              name: 'GALLARY',
+                              name: 'Gallary',
                               color: Colors.lightGreen,
                               image: 'asset/image/gallery.png',
                               onTab: () {
@@ -145,20 +145,22 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: _customButton(
-                              context: context,
-                              name: 'TEACHER & STAFFS',
-                              color: Colors.lightGreen,
-                              image: 'asset/image/teamwork.png',
-                              onTab: () {
-                                Navigator.pushNamed(
-                                    context, Appconstant.teacher_view);
-                              },
+                          
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: _customButton(
+                                context: context,
+                                name: 'Teacher & Staffs',
+                                color: Colors.lightGreen,
+                                image: 'asset/image/teamwork.png',
+                                onTab: () {
+                                  Navigator.pushNamed(
+                                      context, Appconstant.teacher_view);
+                                },
+                              ),
                             ),
                           ),
-                        ),
+                        
                       ],
                     ),
                     Row(
@@ -170,7 +172,7 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: _customButton(
                               context: context,
-                              name: 'JOB CELL',
+                              name: 'Job Cell',
                               color: Colors.lightGreen,
                               image: 'asset/image/receptionist.png',
                               onTab: () {
@@ -185,7 +187,7 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: _customButton(
                               context: context,
-                              name: 'ADMINISTRATION',
+                              name: 'Administration',
                               color: Colors.lightGreen,
                               image: 'asset/image/administrator.png',
                               onTab: () {
@@ -206,7 +208,7 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: _customButton(
                               context: context,
-                              name: 'STUDENT INFO',
+                              name: 'Student Info',
                               color: Colors.lightGreen,
                               image: 'asset/image/student.png',
                               onTab: () {
@@ -217,20 +219,21 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: _customButton(
-                              context: context,
-                              name: 'PRINCIPAL MESSAGE',
-                              color: Colors.lightGreen,
-                              image: 'asset/image/message.png',
-                              onTab: () {
-                                Navigator.pushNamed(
-                                    context,  Appconstant.focal_view);
-                              },
-                            ),
+                         child: Padding(
+                           padding: const EdgeInsets.all(8.0),
+                           child: _customButton(
+                                context: context,
+                                name:'Principal Message',
+                                color: Colors.lightGreen,
+                                image: 'asset/image/message.png',
+                                onTab: () {
+                                  Navigator.pushNamed(
+                                      context,  Appconstant.focal_view);
+                                },
+                              ),
+                         ),
                           ),
-                        ),
+                        
                       ],
                     ),
                      Row(
@@ -242,7 +245,7 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: _customButton(
                               context: context,
-                              name: 'CONTACT US',
+                              name: 'Contact Us',
                               color: Colors.lightGreen,
                               image: 'asset/image/contact.png',
                               onTab: () {
@@ -257,7 +260,7 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: _customButton(
                               context: context,
-                              name: 'IMPORTANT LINK',
+                              name: 'Important Link',
                               color: Colors.lightGreen,
                               image: 'asset/image/world-wide-web.png',
                               onTab: () {
@@ -278,7 +281,7 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: _customButton(
                               context: context,
-                              name: 'DEVOLOPERS',
+                              name: 'Devolopers',
                               color: Colors.lightGreen,
                               image: 'asset/image/coding.png',
                               onTab: () {
