@@ -26,7 +26,7 @@ import 'package:flutter/cupertino.dart';
 class Approutes {
   static final myInRoute = Appconstant.homepage;
   static final Map<String, WidgetBuilder> routes = {
-    Appconstant.homepage: (context) => const HomePage(),
+    Appconstant.homepage: (context) =>  HomePage(),
     Appconstant.mujib_view: (context) => MujibView(),
     Appconstant.technology_view: (context) => TechnologyView(),
     Appconstant.aboutus: (context) => AboutUs(),

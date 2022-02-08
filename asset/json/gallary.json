@@ -5,11 +5,27 @@
     },
     {
         "id":1,
-        "img":"asset/image/sir.jpg"
+        "img":"asset/image/Bbpi_look.png"
     },
     {
         "id":1,
-        "img":"asset/image/robar.jpg"
+        "img":"asset/image/polytechnic.png"
+    },
+    {
+        "id":1,
+        "img":"asset/image/cmt_program.png"
+    },
+    {
+        "id":1,
+        "img":"asset/image/Minar1.png"
+    },
+    {
+        "id":1,
+        "img":"asset/image/Shekhrasel.png"
+    },
+    {
+        "id":1,
+        "img":"asset/image/MR.png"
     },
     {
         "id":1,
@@ -25,7 +41,7 @@
     },
     {
         "id":1,
-        "img":"asset/image/brahmanbaria.jpg"
+        "img":"asset/image/Brahmanbaria.jpg"
     },
     {
         "id":1,
@@ -34,5 +50,25 @@
     {
         "id":1,
         "img":"asset/image/game.jpg"
+    },
+    {
+        "id":1,
+        "img":"asset/image/alochona.png"
+    },
+    {
+        "id":1,
+        "img":"asset/image/mujibcorner.png"
+    },
+    {
+        "id":1,
+        "img":"asset/image/Student1.png"
+    },
+    {
+        "id":1,
+        "img":"asset/image/program.png"
+    },
+    {
+        "id":1,
+        "img":"asset/image/robar.jpg"
     }
 ]

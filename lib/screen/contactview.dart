@@ -43,7 +43,7 @@ class ContactView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 10.0),
+                          padding: const EdgeInsets.only(top: 20.0),
                           child: Text(
                             '${admList.elementAt(index).contact}',
                             style:
