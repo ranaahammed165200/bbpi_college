@@ -23,13 +23,11 @@ class _HomePageState extends State<HomePage> {
     int activeIndex=0;
 
   final urlImages =[
-    'asset/image/baria.jpg',
     'asset/image/polytechnic.png',
     'asset/image/Minar1.png',
     'asset/image/Minar.png',
     'asset/image/Shekhrasel.png',
     'asset/image/MR.png',
-  
     'asset/image/cmt_program.png',
     'asset/image/program.png',
     'asset/image/cmt.png',
