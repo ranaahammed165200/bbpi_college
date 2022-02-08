@@ -23,23 +23,18 @@ class _HomePageState extends State<HomePage> {
     int activeIndex=0;
 
   final urlImages =[
+    'asset/image/baria.jpg',
     'asset/image/polytechnic.png',
     'asset/image/Minar1.png',
     'asset/image/Minar.png',
     'asset/image/Shekhrasel.png',
-    'asset/image/alochona.png',
-    'asset/image/selim.png',
     'asset/image/MR.png',
-    'asset/image/bbpi.jpg',
-    'asset/image/lab.png',
+  
     'asset/image/cmt_program.png',
     'asset/image/program.png',
-    'asset/image/BBPI.png',
-    'asset/image/Bbpi_look.png',
     'asset/image/cmt.png',
-    'asset/image/Student1.png',
     'asset/image/minar.jpg',
-    'asset/image/mujibcorner.png',
+
    ];
 
   @override
